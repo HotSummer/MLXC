@@ -40,6 +40,7 @@
 		4EF9EEB11A9D66E20074D0D9 /* MLXCTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MLXCTests.m; sourceTree = "<group>"; };
 		4EF9EEF01A9D6A630074D0D9 /* MLXCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCMainViewController.h; sourceTree = "<group>"; };
 		4EF9EEF11A9D6A630074D0D9 /* MLXCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCMainViewController.m; sourceTree = "<group>"; };
+		4EF9EEF71A9D80680074D0D9 /* SummerDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SummerDefine.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +82,9 @@
 		4EF9EE911A9D66E20074D0D9 /* MLXC */ = {
 			isa = PBXGroup;
 			children = (
+				4EF9EEF41A9D80470074D0D9 /* Defination */,
+				4EF9EEF51A9D80470074D0D9 /* Functions */,
+				4EF9EEF61A9D80470074D0D9 /* Utilities */,
 				4EF9EE961A9D66E20074D0D9 /* AppDelegate.h */,
 				4EF9EE971A9D66E20074D0D9 /* AppDelegate.m */,
 				4EF9EE9F1A9D66E20074D0D9 /* Main.storyboard */,
@@ -117,6 +121,28 @@
 				4EF9EEB01A9D66E20074D0D9 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4EF9EEF41A9D80470074D0D9 /* Defination */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9EEF71A9D80680074D0D9 /* SummerDefine.h */,
+			);
+			path = Defination;
+			sourceTree = "<group>";
+		};
+		4EF9EEF51A9D80470074D0D9 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		4EF9EEF61A9D80470074D0D9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
