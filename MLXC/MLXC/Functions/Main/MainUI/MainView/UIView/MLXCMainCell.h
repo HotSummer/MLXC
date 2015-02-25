@@ -1,5 +1,5 @@
 //
-//  MLXCMainViewController.h
+//  MLXCMainCell.h
 //  MLXC
 //
 //  Created by summer.zhu on 25/2/15.
@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MLXCMainViewController : UIViewController
+@interface MLXCMainCell : UITableViewCell
+
+@property(nonatomic, strong) NSString *functionName;
 
 @end

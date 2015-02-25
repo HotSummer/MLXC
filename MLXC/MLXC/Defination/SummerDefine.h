@@ -27,7 +27,7 @@
 #define isAfterIOS5 ([[[UIDevice currentDevice] systemVersion] intValue]>5)
 #define isAfterIOS6 ([[[UIDevice currentDevice] systemVersion] intValue]>6)
 #define isAfterIOS7 ([[[UIDevice currentDevice] systemVersion] intValue]>7)
-#define isAfterIOS7 ([[[UIDevice currentDevice] systemVersion] intValue]>=8)
+#define isAfterIOS8 ([[[UIDevice currentDevice] systemVersion] intValue]>=8)
 
 #define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
 #define iPhone6 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(750, 1234), [[UIScreen mainScreen] currentMode].size) : NO)
@@ -41,11 +41,11 @@
 
 //SINGLETON
 #define DECLARE_AS_SINGLETON(interfaceName)               \
-+ (interfaceName*)ShareInstance;                        \
++ (interfaceName*)shareInstance;                        \
 
 #define DEFINE_SINGLETON(interfaceName)                     \
 static interfaceName* interfaceName##Instance = nil;             \
-+ (interfaceName*)ShareInstance                          \
++ (interfaceName*)shareInstance                          \
 {                                                          \
 static dispatch_once_t onceToken;                           \
 dispatch_once(&onceToken, ^{                                \
@@ -86,5 +86,22 @@ return ( PROPERTY_TYPE ) objc_getAssociatedObject(self, &(kProperty##PROPERTY_NA
 { \
 objc_setAssociatedObject(self, &kProperty##PROPERTY_NAME , PROPERTY_NAME , OBJC_ASSOCIATION_RETAIN); \
 } \
+
+#define mock YES
+
+#define Framework
+
+#ifndef Framework
+#define ResourceBundle [NSBundle mainBundle]
+#else
+#define ResourceBundle [NSBundle bundleWithPath: \
+[[NSBundle mainBundle] pathForResource:@"VSNeptune" ofType:@"bundle"]]
+#endif
+
+#ifndef Framework
+#define IMAGEURL(URL)            [NSString stringWithFormat:@"%@", URL]
+#else
+#define IMAGEURL(URL)            [NSString stringWithFormat:@"%@/%@", [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"VSNeptune.bundle"], URL]//[NSString stringWithFormat:@"%@/%@", ResourceBundle, (URL)]
+#endif
 
 #endif

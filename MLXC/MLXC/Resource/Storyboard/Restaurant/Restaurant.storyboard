@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Restaurant List View Controller-->
+        <scene sceneID="FOo-aJ-OBO">
+            <objects>
+                <viewController storyboardIdentifier="MLXCRestaurantListViewControllerStoryboardID" id="fBx-b2-yqO" customClass="MLXCRestaurantListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ngM-pq-VyB"/>
+                        <viewControllerLayoutGuide type="bottom" id="7yd-OW-LMv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QCE-AR-rFW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="llb-MJ-ejW">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的小区附近店铺还没有被我们发现" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EBF-G5-BpK">
+                                        <rect key="frame" x="0.0" y="262" width="320" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="Feo-LQ-nmA"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="EBF-G5-BpK" secondAttribute="centerY" id="A7Q-VE-gkN"/>
+                                    <constraint firstItem="EBF-G5-BpK" firstAttribute="leading" secondItem="llb-MJ-ejW" secondAttribute="leading" id="HDB-Tr-EWa"/>
+                                    <constraint firstAttribute="trailing" secondItem="EBF-G5-BpK" secondAttribute="trailing" id="jO5-eN-8LM"/>
+                                </constraints>
+                            </view>
+                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Otu-AR-r6a">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MLXCRestaurantListCellIndentifier" rowHeight="100" id="7dv-AW-5CV" customClass="MLXCRestaurantListCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7dv-AW-5CV" id="cYF-rc-4Nt">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tFn-NY-fk5">
+                                                    <rect key="frame" x="10" y="10" width="80" height="80"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="外婆家" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3g5-X5-fGD">
+                                                    <rect key="frame" x="100" y="11" width="210" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="￥12/人" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmi-qa-yKA">
+                                                    <rect key="frame" x="100" y="40" width="210" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="沪亭路138号" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P4K-t8-3uR">
+                                                    <rect key="frame" x="100" y="69" width="210" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imageviewRestaurant" destination="tFn-NY-fk5" id="zI3-Cc-V2F"/>
+                                            <outlet property="lblRestaurantAddress" destination="P4K-t8-3uR" id="1sF-SS-qyV"/>
+                                            <outlet property="lblRestaurantName" destination="3g5-X5-fGD" id="DlD-Ox-FAh"/>
+                                            <outlet property="lblRestaurantPrice" destination="mmi-qa-yKA" id="FqN-dV-G6V"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="fBx-b2-yqO" id="BtG-Gq-H8e"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="llb-MJ-ejW" firstAttribute="leading" secondItem="QCE-AR-rFW" secondAttribute="leading" id="1nf-fm-5ur"/>
+                            <constraint firstItem="llb-MJ-ejW" firstAttribute="top" secondItem="QCE-AR-rFW" secondAttribute="top" id="59j-ga-hdN"/>
+                            <constraint firstItem="7yd-OW-LMv" firstAttribute="top" secondItem="llb-MJ-ejW" secondAttribute="bottom" id="5wd-2y-IFy"/>
+                            <constraint firstAttribute="trailing" secondItem="llb-MJ-ejW" secondAttribute="trailing" id="7Cn-5M-Wy8"/>
+                            <constraint firstItem="Otu-AR-r6a" firstAttribute="top" secondItem="QCE-AR-rFW" secondAttribute="top" id="Fmj-FX-JLJ"/>
+                            <constraint firstItem="Otu-AR-r6a" firstAttribute="top" secondItem="QCE-AR-rFW" secondAttribute="top" id="LRc-U3-eju"/>
+                            <constraint firstItem="Otu-AR-r6a" firstAttribute="leading" secondItem="QCE-AR-rFW" secondAttribute="leading" id="aFC-Ku-L6T"/>
+                            <constraint firstItem="Otu-AR-r6a" firstAttribute="top" secondItem="ngM-pq-VyB" secondAttribute="bottom" id="c1n-3a-Bh1"/>
+                            <constraint firstAttribute="trailing" secondItem="Otu-AR-r6a" secondAttribute="trailing" id="yco-3r-wqt"/>
+                            <constraint firstItem="7yd-OW-LMv" firstAttribute="top" secondItem="Otu-AR-r6a" secondAttribute="bottom" id="znC-qY-uKd"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Fmj-FX-JLJ"/>
+                                <exclude reference="LRc-U3-eju"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableRestaurantList" destination="Otu-AR-r6a" id="lID-J5-JIU"/>
+                        <outlet property="viewNoData" destination="llb-MJ-ejW" id="Ld9-KO-kcr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qTZ-CM-Syb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="215" y="291"/>
+        </scene>
+    </scenes>
+</document>
