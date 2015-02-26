@@ -7,25 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MLXCBaseViewController.h"
 
-@interface MLXCRestaurantListViewController : UIViewController
+@interface MLXCRestaurantListViewController : MLXCBaseViewController
 <
 UITableViewDelegate
 >
-
-/**
- *  界面初始状态
- */
-- (void)initView;
-
-/**
- *  没有数据的界面状态
- */
-- (void)showNoDataView;
-
-/**
- *  有数据的界面显示
- */
-- (void)showDataView;
 
 @end

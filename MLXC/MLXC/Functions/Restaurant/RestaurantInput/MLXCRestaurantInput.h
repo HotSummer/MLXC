@@ -17,4 +17,11 @@
  */
 + (NSArray *)restaurantList;
 
+/**
+ *  本地mock餐饮食品列表
+ *
+ *  @return 餐饮食品列表
+ */
++ (NSDictionary *)restaurantFoodList;
+
 @end

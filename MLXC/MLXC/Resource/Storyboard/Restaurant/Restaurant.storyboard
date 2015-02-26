@@ -36,7 +36,7 @@
                                     <constraint firstAttribute="trailing" secondItem="EBF-G5-BpK" secondAttribute="trailing" id="jO5-eN-8LM"/>
                                 </constraints>
                             </view>
-                            <tableView hidden="YES" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Otu-AR-r6a">
+                            <tableView clipsSubviews="YES" tag="1001" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Otu-AR-r6a">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -113,5 +113,142 @@
             </objects>
             <point key="canvasLocation" x="215" y="291"/>
         </scene>
+        <!--Restaurant Food List View Controller-->
+        <scene sceneID="9Jd-3K-e41">
+            <objects>
+                <viewController storyboardIdentifier="MLXCRestaurantFoodListViewControllerStoryboardId" id="HoR-G8-YYL" customClass="MLXCRestaurantFoodListViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9h9-VP-Uf4"/>
+                        <viewControllerLayoutGuide type="bottom" id="UHN-yV-SRh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Fwe-yF-DqV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wKU-vS-uPN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="该店铺还没有提供菜单" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n7a-xX-j4k">
+                                        <rect key="frame" x="0.0" y="262" width="320" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="lVS-Fe-4FQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="n7a-xX-j4k" secondAttribute="trailing" id="2wt-BA-kod"/>
+                                    <constraint firstItem="n7a-xX-j4k" firstAttribute="leading" secondItem="wKU-vS-uPN" secondAttribute="leading" id="L9Z-TK-eua"/>
+                                    <constraint firstAttribute="centerY" secondItem="n7a-xX-j4k" secondAttribute="centerY" id="yz1-7f-sJf"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" tag="1002" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Xhn-Lk-4iF">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MLXCFoodListCellIndentifier" id="b45-h6-Z9W" customClass="MLXCFoodListCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="b45-h6-Z9W" id="gJT-US-lBE">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hasinvoice_normal.png" translatesAutoresizingMaskIntoConstraints="NO" id="cFa-cA-db5">
+                                                    <rect key="frame" x="10" y="15" width="14" height="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="14" id="7fI-3M-uas"/>
+                                                        <constraint firstAttribute="width" constant="14" id="G0L-eP-udi"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="荠菜混沌  16个/13￥" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zy5-BO-57J">
+                                                    <rect key="frame" x="32" y="11" width="253" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="eAb-XT-Ktl"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SUk-sx-EfR">
+                                                    <rect key="frame" x="293" y="7" width="27" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="30" id="M5G-1K-7rw"/>
+                                                        <constraint firstAttribute="width" constant="27" id="U47-gV-G0q"/>
+                                                    </constraints>
+                                                    <state key="normal" image="tipIcon_down.png">
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="didPressedBtnExtend:" destination="b45-h6-Z9W" eventType="touchUpInside" id="2hf-7p-HM1"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="cFa-cA-db5" firstAttribute="leading" secondItem="gJT-US-lBE" secondAttribute="leading" constant="10" id="8Rz-Xb-hXC"/>
+                                                <constraint firstAttribute="trailing" secondItem="SUk-sx-EfR" secondAttribute="trailing" id="P1t-mA-uDl"/>
+                                                <constraint firstItem="SUk-sx-EfR" firstAttribute="leading" secondItem="zy5-BO-57J" secondAttribute="trailing" constant="8" id="XVq-Jy-fIW"/>
+                                                <constraint firstItem="zy5-BO-57J" firstAttribute="leading" secondItem="cFa-cA-db5" secondAttribute="trailing" constant="8" id="Yu6-Wg-k4G"/>
+                                                <constraint firstAttribute="centerY" secondItem="cFa-cA-db5" secondAttribute="centerY" id="ZMS-KV-ZGr"/>
+                                                <constraint firstAttribute="centerY" secondItem="zy5-BO-57J" secondAttribute="centerY" id="fef-id-ud5"/>
+                                                <constraint firstAttribute="centerY" secondItem="SUk-sx-EfR" secondAttribute="centerY" id="q0Q-9s-uHy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="btnShowImage" destination="SUk-sx-EfR" id="70i-xo-bLz"/>
+                                            <outlet property="imageviewSelect" destination="cFa-cA-db5" id="mwb-vn-YbD"/>
+                                            <outlet property="lblFoodMessage" destination="zy5-BO-57J" id="d9A-Tq-LBK"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MLXCFoodListImagesCellIndentifier" rowHeight="103" id="aF7-22-qgd" customClass="MLXCFoodListImagesCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aF7-22-qgd" id="Eoc-Oc-FDz">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xGS-2P-J1E">
+                                                    <rect key="frame" x="0.0" y="0.0" width="320" height="102"/>
+                                                </scrollView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="scrollFoodImages" destination="xGS-2P-J1E" id="r2x-91-gh6"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="HoR-G8-YYL" id="Q6t-2R-pCC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="wKU-vS-uPN" secondAttribute="trailing" id="8vF-i3-dlB"/>
+                            <constraint firstItem="wKU-vS-uPN" firstAttribute="top" secondItem="9h9-VP-Uf4" secondAttribute="bottom" id="i1C-Ua-zRj"/>
+                            <constraint firstItem="UHN-yV-SRh" firstAttribute="top" secondItem="wKU-vS-uPN" secondAttribute="bottom" id="iUK-wM-q5n"/>
+                            <constraint firstItem="Xhn-Lk-4iF" firstAttribute="leading" secondItem="Fwe-yF-DqV" secondAttribute="leading" id="qK1-Sd-iXr"/>
+                            <constraint firstItem="wKU-vS-uPN" firstAttribute="leading" secondItem="Fwe-yF-DqV" secondAttribute="leading" id="uO7-Q9-g0b"/>
+                            <constraint firstItem="UHN-yV-SRh" firstAttribute="top" secondItem="Xhn-Lk-4iF" secondAttribute="bottom" id="wMQ-cC-Vrx"/>
+                            <constraint firstAttribute="trailing" secondItem="Xhn-Lk-4iF" secondAttribute="trailing" id="xhe-2i-6Rf"/>
+                            <constraint firstItem="Xhn-Lk-4iF" firstAttribute="top" secondItem="9h9-VP-Uf4" secondAttribute="bottom" id="ybN-ok-BbX"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableFood" destination="Xhn-Lk-4iF" id="5gk-wG-hf0"/>
+                        <outlet property="viewNoData" destination="wKU-vS-uPN" id="ucV-B3-ZNS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ftm-z0-19r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="598" y="291"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="hasinvoice_normal.png" width="14" height="14"/>
+        <image name="tipIcon_down.png" width="11" height="7"/>
+    </resources>
 </document>

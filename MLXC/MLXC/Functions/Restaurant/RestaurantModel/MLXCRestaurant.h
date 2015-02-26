@@ -10,6 +10,7 @@
 
 @interface MLXCRestaurant : NSObject
 
+@property(nonatomic, strong) NSString *restaurantId;
 @property(nonatomic, strong) NSString *restaurantName;
 @property(nonatomic, strong) NSString *restaurantPrice;
 @property(nonatomic, strong) NSString *restaurantAddress;

@@ -22,9 +22,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [MLXCRestaurantController shareInstance].ownerVC = self;
+    [MLXCRestaurantController shareInstance].restaurantListVC = self;
     
-    [[MLXCRestaurantController shareInstance] loadViewWithRequest];
+    [[MLXCRestaurantController shareInstance] restaurantListLoadViewWithRequest];
     _tableRestaurantList.dataSource = [MLXCRestaurantController shareInstance];
 }
 
@@ -34,10 +34,11 @@
 }
 
 - (void)initView{
+    [super initView];
     __weak MLXCRestaurantListViewController *wSelf = self;
     UIImage *imageBack = [UIImage imageNamed:@"back.png"];//[UIImage imageWithContentsOfFile:IMAGEURL(@"back.png")];
     [self showLeftBarItem:imageBack leftBlock:^{
-        [[MLXCRestaurantController shareInstance] back];
+        [[MLXCRestaurantController shareInstance] restaurantListback];
         [wSelf.navigationController popViewControllerAnimated:YES];
     }];
     
@@ -46,11 +47,13 @@
 }
 
 - (void)showNoDataView{
+    [super showNoDataView];
     _tableRestaurantList.hidden = YES;
     _viewNoData.hidden = NO;
 }
 
 - (void)showDataView{
+    [super showDataView];
     _tableRestaurantList.hidden = NO;
     _viewNoData.hidden = YES;
     [_tableRestaurantList reloadData];
@@ -69,6 +72,10 @@
 #pragma mark - tableview delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     return 100;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [[MLXCRestaurantController shareInstance] selectRestaurant:indexPath];
 }
 
 @end

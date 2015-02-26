@@ -14,6 +14,15 @@
 
 DEFINE_SINGLETON(MLXCRestaurantManager);
 
+- (void)clearRestaurantListData{
+    self.restaurantList = nil;
+    self.restaurantId = nil;
+}
+
+- (void)clearRestaurantFoodData{
+    self.restaurantFoodList = nil;
+}
+
 - (void)loadRestaurantList:(ResponseBlock)block{
     [[NetConfigManager shareInstance] request:@"" requestObject:nil responseObject:nil response:^(int code, NSString *message, id content, NSError *error) {
         if (mock) {
@@ -26,8 +35,20 @@ DEFINE_SINGLETON(MLXCRestaurantManager);
     }];
 }
 
-- (void)clearRestaurantListData{
-    self.restaurantList = nil;
+- (void)selectRestaurant:(NSString *)restaurantId{
+    _restaurantId = restaurantId;
+}
+
+- (void)loadFoodList:(ResponseBlock)block{
+    [[NetConfigManager shareInstance] request:@"" requestObject:nil responseObject:nil response:^(int code, NSString *message, id content, NSError *error) {
+        if (mock) {
+            NSDictionary *mockData = [MLXCRestaurantInput restaurantFoodList];
+            self.restaurantFoodList = (MLXCRestaurantFoodList *)[Reflection objectFromContent:mockData className:@"MLXCRestaurantFoodList"];
+            block(200, nil, self.restaurantList, nil);
+        }else{
+            
+        }
+    }];
 }
 
 @end

@@ -66,6 +66,31 @@
 		4EF9F0281A9DCF9E0074D0D9 /* Back.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F0271A9DCF9E0074D0D9 /* Back.xib */; };
 		4EF9F02D1A9DD16F0074D0D9 /* UIViewController+Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F02C1A9DD16F0074D0D9 /* UIViewController+Bar.m */; };
 		4EF9F0301A9DD1BA0074D0D9 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F02F1A9DD1BA0074D0D9 /* back@2x.png */; };
+		4EF9F03B1A9EBD130074D0D9 /* hasinvoice_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F0391A9EBD130074D0D9 /* hasinvoice_normal@2x.png */; };
+		4EF9F03C1A9EBD130074D0D9 /* hasinvoice_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F03A1A9EBD130074D0D9 /* hasinvoice_selected@2x.png */; };
+		4EF9F03F1A9EBF190074D0D9 /* tipIcon_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F03D1A9EBF190074D0D9 /* tipIcon_down@2x.png */; };
+		4EF9F0401A9EBF190074D0D9 /* tipIcon_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F03E1A9EBF190074D0D9 /* tipIcon_up@2x.png */; };
+		4EF9F0461A9EC3F40074D0D9 /* MLXCRestaurantFoodList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0451A9EC3F40074D0D9 /* MLXCRestaurantFoodList.m */; };
+		4EF9F0491A9EC40B0074D0D9 /* MLXCRestaurantFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0481A9EC40B0074D0D9 /* MLXCRestaurantFood.m */; };
+		4EF9F04C1A9ECB850074D0D9 /* MLXCRestaurantFoodListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F04B1A9ECB850074D0D9 /* MLXCRestaurantFoodListViewController.m */; };
+		4EF9F04F1A9ECC830074D0D9 /* MLXCBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F04E1A9ECC830074D0D9 /* MLXCBaseViewController.m */; };
+		4EF9F05B1A9F0A710074D0D9 /* MLXCFoodListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F05A1A9F0A710074D0D9 /* MLXCFoodListCell.m */; };
+		4EF9F05E1A9F171D0074D0D9 /* MLXCFoodListImagesCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F05D1A9F171D0074D0D9 /* MLXCFoodListImagesCell.m */; };
+		4EF9F07E1A9F1DD00074D0D9 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0621A9F1DCF0074D0D9 /* NSData+ImageContentType.m */; };
+		4EF9F07F1A9F1DD00074D0D9 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0641A9F1DCF0074D0D9 /* SDImageCache.m */; };
+		4EF9F0801A9F1DD00074D0D9 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0661A9F1DCF0074D0D9 /* SDWebImageCompat.m */; };
+		4EF9F0811A9F1DD00074D0D9 /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0681A9F1DCF0074D0D9 /* SDWebImageDecoder.m */; };
+		4EF9F0821A9F1DD00074D0D9 /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F06A1A9F1DCF0074D0D9 /* SDWebImageDownloader.m */; };
+		4EF9F0831A9F1DD00074D0D9 /* SDWebImageDownloaderOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F06C1A9F1DCF0074D0D9 /* SDWebImageDownloaderOperation.m */; };
+		4EF9F0841A9F1DD00074D0D9 /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F06E1A9F1DCF0074D0D9 /* SDWebImageManager.m */; };
+		4EF9F0851A9F1DD00074D0D9 /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0711A9F1DCF0074D0D9 /* SDWebImagePrefetcher.m */; };
+		4EF9F0861A9F1DD00074D0D9 /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0731A9F1DCF0074D0D9 /* UIButton+WebCache.m */; };
+		4EF9F0871A9F1DD00074D0D9 /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0751A9F1DCF0074D0D9 /* UIImage+GIF.m */; };
+		4EF9F0881A9F1DD00074D0D9 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0771A9F1DCF0074D0D9 /* UIImage+MultiFormat.m */; };
+		4EF9F0891A9F1DD00074D0D9 /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0791A9F1DCF0074D0D9 /* UIImageView+HighlightedWebCache.m */; };
+		4EF9F08A1A9F1DD00074D0D9 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F07B1A9F1DCF0074D0D9 /* UIImageView+WebCache.m */; };
+		4EF9F08B1A9F1DD00074D0D9 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F07D1A9F1DD00074D0D9 /* UIView+WebCacheOperation.m */; };
+		4EF9F08E1A9F202A0074D0D9 /* UIImageView+MLXCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F08D1A9F202A0074D0D9 /* UIImageView+MLXCImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -200,6 +225,54 @@
 		4EF9F02B1A9DD16F0074D0D9 /* UIViewController+Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Bar.h"; sourceTree = "<group>"; };
 		4EF9F02C1A9DD16F0074D0D9 /* UIViewController+Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Bar.m"; sourceTree = "<group>"; };
 		4EF9F02F1A9DD1BA0074D0D9 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
+		4EF9F0391A9EBD130074D0D9 /* hasinvoice_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hasinvoice_normal@2x.png"; sourceTree = "<group>"; };
+		4EF9F03A1A9EBD130074D0D9 /* hasinvoice_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hasinvoice_selected@2x.png"; sourceTree = "<group>"; };
+		4EF9F03D1A9EBF190074D0D9 /* tipIcon_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipIcon_down@2x.png"; sourceTree = "<group>"; };
+		4EF9F03E1A9EBF190074D0D9 /* tipIcon_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipIcon_up@2x.png"; sourceTree = "<group>"; };
+		4EF9F0441A9EC3F40074D0D9 /* MLXCRestaurantFoodList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCRestaurantFoodList.h; sourceTree = "<group>"; };
+		4EF9F0451A9EC3F40074D0D9 /* MLXCRestaurantFoodList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCRestaurantFoodList.m; sourceTree = "<group>"; };
+		4EF9F0471A9EC40B0074D0D9 /* MLXCRestaurantFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCRestaurantFood.h; sourceTree = "<group>"; };
+		4EF9F0481A9EC40B0074D0D9 /* MLXCRestaurantFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCRestaurantFood.m; sourceTree = "<group>"; };
+		4EF9F04A1A9ECB850074D0D9 /* MLXCRestaurantFoodListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCRestaurantFoodListViewController.h; sourceTree = "<group>"; };
+		4EF9F04B1A9ECB850074D0D9 /* MLXCRestaurantFoodListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCRestaurantFoodListViewController.m; sourceTree = "<group>"; };
+		4EF9F04D1A9ECC830074D0D9 /* MLXCBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCBaseViewController.h; sourceTree = "<group>"; };
+		4EF9F04E1A9ECC830074D0D9 /* MLXCBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCBaseViewController.m; sourceTree = "<group>"; };
+		4EF9F0591A9F0A710074D0D9 /* MLXCFoodListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCFoodListCell.h; sourceTree = "<group>"; };
+		4EF9F05A1A9F0A710074D0D9 /* MLXCFoodListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCFoodListCell.m; sourceTree = "<group>"; };
+		4EF9F05C1A9F171D0074D0D9 /* MLXCFoodListImagesCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCFoodListImagesCell.h; sourceTree = "<group>"; };
+		4EF9F05D1A9F171D0074D0D9 /* MLXCFoodListImagesCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCFoodListImagesCell.m; sourceTree = "<group>"; };
+		4EF9F0611A9F1DCF0074D0D9 /* NSData+ImageContentType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+ImageContentType.h"; sourceTree = "<group>"; };
+		4EF9F0621A9F1DCF0074D0D9 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+ImageContentType.m"; sourceTree = "<group>"; };
+		4EF9F0631A9F1DCF0074D0D9 /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		4EF9F0641A9F1DCF0074D0D9 /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		4EF9F0651A9F1DCF0074D0D9 /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		4EF9F0661A9F1DCF0074D0D9 /* SDWebImageCompat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageCompat.m; sourceTree = "<group>"; };
+		4EF9F0671A9F1DCF0074D0D9 /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		4EF9F0681A9F1DCF0074D0D9 /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		4EF9F0691A9F1DCF0074D0D9 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		4EF9F06A1A9F1DCF0074D0D9 /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		4EF9F06B1A9F1DCF0074D0D9 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
+		4EF9F06C1A9F1DCF0074D0D9 /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
+		4EF9F06D1A9F1DCF0074D0D9 /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		4EF9F06E1A9F1DCF0074D0D9 /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		4EF9F06F1A9F1DCF0074D0D9 /* SDWebImageOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageOperation.h; sourceTree = "<group>"; };
+		4EF9F0701A9F1DCF0074D0D9 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImagePrefetcher.h; sourceTree = "<group>"; };
+		4EF9F0711A9F1DCF0074D0D9 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImagePrefetcher.m; sourceTree = "<group>"; };
+		4EF9F0721A9F1DCF0074D0D9 /* UIButton+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+WebCache.h"; sourceTree = "<group>"; };
+		4EF9F0731A9F1DCF0074D0D9 /* UIButton+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+WebCache.m"; sourceTree = "<group>"; };
+		4EF9F0741A9F1DCF0074D0D9 /* UIImage+GIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GIF.h"; sourceTree = "<group>"; };
+		4EF9F0751A9F1DCF0074D0D9 /* UIImage+GIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GIF.m"; sourceTree = "<group>"; };
+		4EF9F0761A9F1DCF0074D0D9 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+MultiFormat.h"; sourceTree = "<group>"; };
+		4EF9F0771A9F1DCF0074D0D9 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+MultiFormat.m"; sourceTree = "<group>"; };
+		4EF9F0781A9F1DCF0074D0D9 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
+		4EF9F0791A9F1DCF0074D0D9 /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
+		4EF9F07A1A9F1DCF0074D0D9 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		4EF9F07B1A9F1DCF0074D0D9 /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
+		4EF9F07C1A9F1DD00074D0D9 /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
+		4EF9F07D1A9F1DD00074D0D9 /* UIView+WebCacheOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+WebCacheOperation.m"; sourceTree = "<group>"; };
+		4EF9F08C1A9F202A0074D0D9 /* UIImageView+MLXCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MLXCImageView.h"; sourceTree = "<group>"; };
+		4EF9F08D1A9F202A0074D0D9 /* UIImageView+MLXCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MLXCImageView.m"; sourceTree = "<group>"; };
+		4EF9F0901A9F216D0074D0D9 /* MLXCDefaultUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCDefaultUI.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,6 +321,7 @@
 		4EF9EE911A9D66E20074D0D9 /* MLXC */ = {
 			isa = PBXGroup;
 			children = (
+				4EF9F08F1A9F20B80074D0D9 /* MLXCBaseUI */,
 				4EF9F01B1A9DBD010074D0D9 /* Frameworks */,
 				4EF9EF001A9D9E770074D0D9 /* Resource */,
 				4EF9EEF41A9D80470074D0D9 /* Defination */,
@@ -309,6 +383,7 @@
 		4EF9EEF61A9D80470074D0D9 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				4EF9F0601A9F1DCF0074D0D9 /* SDWebImage */,
 				4EF9F02A1A9DD16F0074D0D9 /* ViewCategory */,
 				4EF9EFAC1A9DBC7F0074D0D9 /* AFNetWorking */,
 				4EF9EF4B1A9DA8760074D0D9 /* NetConfigRequest */,
@@ -407,6 +482,10 @@
 				4EF9EF481A9DA77A0074D0D9 /* MLXCRestaurantList.m */,
 				4EF9EF8E1A9DA90D0074D0D9 /* MLXCRestaurant.h */,
 				4EF9EF8F1A9DA90D0074D0D9 /* MLXCRestaurant.m */,
+				4EF9F0441A9EC3F40074D0D9 /* MLXCRestaurantFoodList.h */,
+				4EF9F0451A9EC3F40074D0D9 /* MLXCRestaurantFoodList.m */,
+				4EF9F0471A9EC40B0074D0D9 /* MLXCRestaurantFood.h */,
+				4EF9F0481A9EC40B0074D0D9 /* MLXCRestaurantFood.m */,
 			);
 			path = RestaurantModel;
 			sourceTree = "<group>";
@@ -684,6 +763,10 @@
 			children = (
 				4EF9F0211A9DBD970074D0D9 /* MLXCRestaurantListCell.h */,
 				4EF9F0221A9DBD970074D0D9 /* MLXCRestaurantListCell.m */,
+				4EF9F0591A9F0A710074D0D9 /* MLXCFoodListCell.h */,
+				4EF9F05A1A9F0A710074D0D9 /* MLXCFoodListCell.m */,
+				4EF9F05C1A9F171D0074D0D9 /* MLXCFoodListImagesCell.h */,
+				4EF9F05D1A9F171D0074D0D9 /* MLXCFoodListImagesCell.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -693,6 +776,8 @@
 			children = (
 				4EF9F01E1A9DBD7A0074D0D9 /* MLXCRestaurantListViewController.h */,
 				4EF9F01F1A9DBD7A0074D0D9 /* MLXCRestaurantListViewController.m */,
+				4EF9F04A1A9ECB850074D0D9 /* MLXCRestaurantFoodListViewController.h */,
+				4EF9F04B1A9ECB850074D0D9 /* MLXCRestaurantFoodListViewController.m */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -724,6 +809,7 @@
 		4EF9F0291A9DCFBD0074D0D9 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				4EF9F0341A9EBCA60074D0D9 /* Restaurant */,
 				4EF9F02E1A9DD1BA0074D0D9 /* Global */,
 			);
 			path = Image;
@@ -734,6 +820,10 @@
 			children = (
 				4EF9F02B1A9DD16F0074D0D9 /* UIViewController+Bar.h */,
 				4EF9F02C1A9DD16F0074D0D9 /* UIViewController+Bar.m */,
+				4EF9F04D1A9ECC830074D0D9 /* MLXCBaseViewController.h */,
+				4EF9F04E1A9ECC830074D0D9 /* MLXCBaseViewController.m */,
+				4EF9F08C1A9F202A0074D0D9 /* UIImageView+MLXCImageView.h */,
+				4EF9F08D1A9F202A0074D0D9 /* UIImageView+MLXCImageView.m */,
 			);
 			path = ViewCategory;
 			sourceTree = "<group>";
@@ -744,6 +834,61 @@
 				4EF9F02F1A9DD1BA0074D0D9 /* back@2x.png */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		4EF9F0341A9EBCA60074D0D9 /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F03D1A9EBF190074D0D9 /* tipIcon_down@2x.png */,
+				4EF9F03E1A9EBF190074D0D9 /* tipIcon_up@2x.png */,
+				4EF9F0391A9EBD130074D0D9 /* hasinvoice_normal@2x.png */,
+				4EF9F03A1A9EBD130074D0D9 /* hasinvoice_selected@2x.png */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		4EF9F0601A9F1DCF0074D0D9 /* SDWebImage */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F0611A9F1DCF0074D0D9 /* NSData+ImageContentType.h */,
+				4EF9F0621A9F1DCF0074D0D9 /* NSData+ImageContentType.m */,
+				4EF9F0631A9F1DCF0074D0D9 /* SDImageCache.h */,
+				4EF9F0641A9F1DCF0074D0D9 /* SDImageCache.m */,
+				4EF9F0651A9F1DCF0074D0D9 /* SDWebImageCompat.h */,
+				4EF9F0661A9F1DCF0074D0D9 /* SDWebImageCompat.m */,
+				4EF9F0671A9F1DCF0074D0D9 /* SDWebImageDecoder.h */,
+				4EF9F0681A9F1DCF0074D0D9 /* SDWebImageDecoder.m */,
+				4EF9F0691A9F1DCF0074D0D9 /* SDWebImageDownloader.h */,
+				4EF9F06A1A9F1DCF0074D0D9 /* SDWebImageDownloader.m */,
+				4EF9F06B1A9F1DCF0074D0D9 /* SDWebImageDownloaderOperation.h */,
+				4EF9F06C1A9F1DCF0074D0D9 /* SDWebImageDownloaderOperation.m */,
+				4EF9F06D1A9F1DCF0074D0D9 /* SDWebImageManager.h */,
+				4EF9F06E1A9F1DCF0074D0D9 /* SDWebImageManager.m */,
+				4EF9F06F1A9F1DCF0074D0D9 /* SDWebImageOperation.h */,
+				4EF9F0701A9F1DCF0074D0D9 /* SDWebImagePrefetcher.h */,
+				4EF9F0711A9F1DCF0074D0D9 /* SDWebImagePrefetcher.m */,
+				4EF9F0721A9F1DCF0074D0D9 /* UIButton+WebCache.h */,
+				4EF9F0731A9F1DCF0074D0D9 /* UIButton+WebCache.m */,
+				4EF9F0741A9F1DCF0074D0D9 /* UIImage+GIF.h */,
+				4EF9F0751A9F1DCF0074D0D9 /* UIImage+GIF.m */,
+				4EF9F0761A9F1DCF0074D0D9 /* UIImage+MultiFormat.h */,
+				4EF9F0771A9F1DCF0074D0D9 /* UIImage+MultiFormat.m */,
+				4EF9F0781A9F1DCF0074D0D9 /* UIImageView+HighlightedWebCache.h */,
+				4EF9F0791A9F1DCF0074D0D9 /* UIImageView+HighlightedWebCache.m */,
+				4EF9F07A1A9F1DCF0074D0D9 /* UIImageView+WebCache.h */,
+				4EF9F07B1A9F1DCF0074D0D9 /* UIImageView+WebCache.m */,
+				4EF9F07C1A9F1DD00074D0D9 /* UIView+WebCacheOperation.h */,
+				4EF9F07D1A9F1DD00074D0D9 /* UIView+WebCacheOperation.m */,
+			);
+			path = SDWebImage;
+			sourceTree = "<group>";
+		};
+		4EF9F08F1A9F20B80074D0D9 /* MLXCBaseUI */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F0901A9F216D0074D0D9 /* MLXCDefaultUI.h */,
+			);
+			path = MLXCBaseUI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -827,12 +972,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4EF9F03C1A9EBD130074D0D9 /* hasinvoice_selected@2x.png in Resources */,
 				4EF9EFA31A9DB3E80074D0D9 /* Main.storyboard in Resources */,
+				4EF9F0401A9EBF190074D0D9 /* tipIcon_up@2x.png in Resources */,
 				4EF9F0281A9DCF9E0074D0D9 /* Back.xib in Resources */,
 				4EF9EF041A9D9EC10074D0D9 /* Restaurant.storyboard in Resources */,
 				4EF9EEA61A9D66E20074D0D9 /* LaunchScreen.xib in Resources */,
 				4EF9EEA31A9D66E20074D0D9 /* Images.xcassets in Resources */,
 				4EF9F0301A9DD1BA0074D0D9 /* back@2x.png in Resources */,
+				4EF9F03F1A9EBF190074D0D9 /* tipIcon_down@2x.png in Resources */,
+				4EF9F03B1A9EBD130074D0D9 /* hasinvoice_normal@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -851,7 +1000,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EF9EFD31A9DBC7F0074D0D9 /* AFHTTPRequestOperation.m in Sources */,
+				4EF9F0491A9EC40B0074D0D9 /* MLXCRestaurantFood.m in Sources */,
 				4EF9EF491A9DA77A0074D0D9 /* MLXCRestaurantList.m in Sources */,
+				4EF9F0831A9F1DD00074D0D9 /* SDWebImageDownloaderOperation.m in Sources */,
 				4EF9EF841A9DA8770074D0D9 /* AFNetWorkRequest.m in Sources */,
 				4EF9EF8B1A9DA8770074D0D9 /* Reflection.m in Sources */,
 				4EF9EF8D1A9DA8770074D0D9 /* ReflectionProperty.m in Sources */,
@@ -862,39 +1013,58 @@
 				4EF9EFE21A9DBC7F0074D0D9 /* UIRefreshControl+AFNetworking.m in Sources */,
 				4EF9EFDC1A9DBC7F0074D0D9 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				4EF9EF871A9DA8770074D0D9 /* NetConfigDefaultSign.m in Sources */,
+				4EF9F04C1A9ECB850074D0D9 /* MLXCRestaurantFoodListViewController.m in Sources */,
 				4EF9EF821A9DA8770074D0D9 /* WMNetConfigInput.m in Sources */,
 				4EF9EFE01A9DBC7F0074D0D9 /* UIImageView+AFNetworking.m in Sources */,
 				4EF9EFDF1A9DBC7F0074D0D9 /* UIButton+AFNetworking.m in Sources */,
 				4EF9EFDD1A9DBC7F0074D0D9 /* UIActivityIndicatorView+AFNetworking.m in Sources */,
 				4EF9EFDB1A9DBC7F0074D0D9 /* AFURLSessionManager.m in Sources */,
 				4EF9EE981A9D66E20074D0D9 /* AppDelegate.m in Sources */,
+				4EF9F0841A9F1DD00074D0D9 /* SDWebImageManager.m in Sources */,
 				4EF9EFD71A9DBC7F0074D0D9 /* AFSecurityPolicy.m in Sources */,
 				4EF9EFDA1A9DBC7F0074D0D9 /* AFURLResponseSerialization.m in Sources */,
+				4EF9F0881A9F1DD00074D0D9 /* UIImage+MultiFormat.m in Sources */,
+				4EF9F0851A9F1DD00074D0D9 /* SDWebImagePrefetcher.m in Sources */,
+				4EF9F0461A9EC3F40074D0D9 /* MLXCRestaurantFoodList.m in Sources */,
+				4EF9F08B1A9F1DD00074D0D9 /* UIView+WebCacheOperation.m in Sources */,
 				4EF9EFE11A9DBC7F0074D0D9 /* UIProgressView+AFNetworking.m in Sources */,
 				4EF9EFA81A9DB4200074D0D9 /* MLXCMainViewController.m in Sources */,
 				4EF9EF7E1A9DA8770074D0D9 /* NetConfigModelDefaultManager.m in Sources */,
 				4EF9EF831A9DA8770074D0D9 /* NetConfigDefaultReflect.m in Sources */,
+				4EF9F0811A9F1DD00074D0D9 /* SDWebImageDecoder.m in Sources */,
 				4EF9EFD81A9DBC7F0074D0D9 /* AFURLConnectionOperation.m in Sources */,
 				4EF9EF861A9DA8770074D0D9 /* NetConfigRequestDataDefaultManager.m in Sources */,
 				4EF9EFDE1A9DBC7F0074D0D9 /* UIAlertView+AFNetworking.m in Sources */,
 				4EF9EFD91A9DBC7F0074D0D9 /* AFURLRequestSerialization.m in Sources */,
+				4EF9F0801A9F1DD00074D0D9 /* SDWebImageCompat.m in Sources */,
 				4EF9EF991A9DB2410074D0D9 /* MLXCRestaurantController.m in Sources */,
+				4EF9F0861A9F1DD00074D0D9 /* UIButton+WebCache.m in Sources */,
 				4EF9EF8C1A9DA8770074D0D9 /* ReflectionException.m in Sources */,
 				4EF9EF851A9DA8770074D0D9 /* WMAFNetWorkRequest.m in Sources */,
 				4EF9F0201A9DBD7A0074D0D9 /* MLXCRestaurantListViewController.m in Sources */,
+				4EF9F08E1A9F202A0074D0D9 /* UIImageView+MLXCImageView.m in Sources */,
+				4EF9F08A1A9F1DD00074D0D9 /* UIImageView+WebCache.m in Sources */,
 				4EF9EFD41A9DBC7F0074D0D9 /* AFHTTPRequestOperationManager.m in Sources */,
 				4EF9EF7F1A9DA8770074D0D9 /* NetConfigManager.m in Sources */,
 				4EF9EF881A9DA8770074D0D9 /* WMNetConfigSign.m in Sources */,
+				4EF9F0821A9F1DD00074D0D9 /* SDWebImageDownloader.m in Sources */,
 				4EF9F02D1A9DD16F0074D0D9 /* UIViewController+Bar.m in Sources */,
+				4EF9F07F1A9F1DD00074D0D9 /* SDImageCache.m in Sources */,
 				4EF9EFD61A9DBC7F0074D0D9 /* AFNetworkReachabilityManager.m in Sources */,
 				4EF9F0231A9DBD970074D0D9 /* MLXCRestaurantListCell.m in Sources */,
 				4EF9EF931A9DA9ED0074D0D9 /* MLXCRestaurantManager.m in Sources */,
+				4EF9F07E1A9F1DD00074D0D9 /* NSData+ImageContentType.m in Sources */,
+				4EF9F04F1A9ECC830074D0D9 /* MLXCBaseViewController.m in Sources */,
+				4EF9F0871A9F1DD00074D0D9 /* UIImage+GIF.m in Sources */,
+				4EF9F0891A9F1DD00074D0D9 /* UIImageView+HighlightedWebCache.m in Sources */,
 				4EF9EFAB1A9DB6C30074D0D9 /* MLXCMainCell.m in Sources */,
 				4EF9EF891A9DA8770074D0D9 /* NSObject+Reflection.m in Sources */,
+				4EF9F05E1A9F171D0074D0D9 /* MLXCFoodListImagesCell.m in Sources */,
 				4EF9EF811A9DA8770074D0D9 /* NetConfigInput.m in Sources */,
 				4EF9EE951A9D66E20074D0D9 /* main.m in Sources */,
 				4EF9EF961A9DAA770074D0D9 /* MLXCRestaurantInput.m in Sources */,
 				4EF9EF8A1A9DA8770074D0D9 /* ReadValue.m in Sources */,
+				4EF9F05B1A9F0A710074D0D9 /* MLXCFoodListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1081,6 +1251,7 @@
 				4EF9EEB71A9D66E20074D0D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4EF9EEB81A9D66E20074D0D9 /* Build configuration list for PBXNativeTarget "MLXCTests" */ = {
 			isa = XCConfigurationList;
@@ -1089,6 +1260,7 @@
 				4EF9EEBA1A9D66E20074D0D9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
