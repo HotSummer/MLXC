@@ -26,6 +26,8 @@
     // Configure the view for the selected state
 }
 
-
+- (void)setFood:(MLXCRestaurantFood *)food{
+    _food = food;
+}
 
 @end
