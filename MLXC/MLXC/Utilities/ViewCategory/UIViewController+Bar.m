@@ -62,7 +62,7 @@ static NSString *RightBlockString = @"RightBlockString";
 #pragma mark - 创建BarButtonItem三种方式
 - (UIBarButtonItem *)barWithString:(NSString *)message selector:(SEL)selector{
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithTitle:message style:UIBarButtonItemStylePlain target:self action:selector];
-    [item setTintColor:[UIColor whiteColor]];
+    [item setTintColor:[UIColor blackColor]];
     return item;
 }
 

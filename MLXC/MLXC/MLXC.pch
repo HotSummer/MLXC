@@ -15,6 +15,7 @@
 #ifdef __OBJC__
     #import "SummerDefine.h"
     #import "MLXCDefaultUI.h"
+    #import "MLXCCommonDefine.h"
 #endif
 
 

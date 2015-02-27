@@ -44,6 +44,10 @@
         [wSelf.navigationController popViewControllerAnimated:YES];
     }];
     
+    [self showRightBarItem:@"保存" rightBlock:^{
+        [[MLXCRestaurantController shareInstance] saveSelectFood];
+    }];
+    
     _tableFood.hidden = YES;
     _viewNoData.hidden = YES;
 }
@@ -92,7 +96,7 @@
 #pragma mark - tableview delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 0) {
-        return 44;
+        return [[MLXCRestaurantController shareInstance] foodMessageCellHeight:indexPath];
     }else{
         return 103;
     }

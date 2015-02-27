@@ -11,6 +11,7 @@
 @interface MLXCRestaurantFoodList : NSObject
 
 @property(nonatomic, strong) NSString *restaurantId;
+@property(nonatomic, strong) NSString *restaurantName;
 @property(nonatomic, strong) NSArray *foods;
 
 @end

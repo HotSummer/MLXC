@@ -11,10 +11,12 @@
 @interface MLXCRestaurantFood : NSObject
 
 @property(nonatomic, strong) NSString *restaurantId;
+@property(nonatomic, strong) NSString *restaurantName;
 @property(nonatomic, strong) NSString *foodName;
 @property(nonatomic, strong) NSString *foodPrice;
 @property(nonatomic, strong) NSArray *foodImages;
 
+@property(nonatomic) NSInteger foodNumber;//点这道菜的个数
 /**
  *  是否选择该食品
  */

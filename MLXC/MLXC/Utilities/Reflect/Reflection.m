@@ -218,7 +218,11 @@
                     NSMutableArray *array = [[NSMutableArray alloc] initWithArray:value];
                     NSMutableArray *results = [[NSMutableArray alloc] init];
                     for (id onceId in array) {
-                        [results addObject:[Reflection dictionaryFromObject:onceId]];
+                        if ([onceId isKindOfClass:[NSString class]] || [onceId isKindOfClass:[NSNumber class]]) {
+                            [results addObject:onceId];
+                        }else{
+                            [results addObject:[Reflection dictionaryFromObject:onceId]];
+                        }
                     }
                     [finalDict setObject:results forKey:name];
                 } else if ([type isEqualToString:@"NSMutableDictionary"] || [type isEqualToString:@"NSDictionary"]){

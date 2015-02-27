@@ -8,6 +8,8 @@
 
 #import "MLXCMainViewController.h"
 #import "MLXCRestaurantListViewController.h"
+#import "MLXCCheckoutInterface.h"
+#import "MLXCMainInput.h"
 #import "MLXCMainCell.h"
 
 @interface MLXCMainViewController ()
@@ -37,18 +39,23 @@
 */
 #pragma mark - tableview delegate
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return [MLXCMainInput funtions].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     MLXCMainCell *cell = (MLXCMainCell *)[tableView dequeueReusableCellWithIdentifier:@"MLXCMainCellIndentifier"];
-    cell.functionName = @"小区餐馆";
+    cell.functionName = [MLXCMainInput funtions][indexPath.row];
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    MLXCRestaurantListViewController *restaurantListVC = [[UIStoryboard storyboardWithName:@"Restaurant" bundle:ResourceBundle] instantiateViewControllerWithIdentifier:@"MLXCRestaurantListViewControllerStoryboardID"];//[[ResourceBundle loadNibNamed:@"MLXCRestaurantListViewController" owner:self options:nil] lastObject];
-    [self.navigationController pushViewController:restaurantListVC animated:YES];
+    if (indexPath.row == 0) {
+        MLXCRestaurantListViewController *restaurantListVC = [[UIStoryboard storyboardWithName:@"Restaurant" bundle:ResourceBundle] instantiateViewControllerWithIdentifier:@"MLXCRestaurantListViewControllerStoryboardID"];//[[ResourceBundle loadNibNamed:@"MLXCRestaurantListViewController" owner:self options:nil] lastObject];
+        [self.navigationController pushViewController:restaurantListVC animated:YES];
+    }else{
+        UIViewController *viewController = [MLXCCheckoutInterface checkoutViewController];
+        [self.navigationController pushViewController:viewController animated:YES];
+    }
 }
 
 @end

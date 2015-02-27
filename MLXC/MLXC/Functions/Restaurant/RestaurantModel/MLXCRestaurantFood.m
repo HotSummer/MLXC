@@ -10,6 +10,13 @@
 
 @implementation MLXCRestaurantFood
 
+- (id)init{
+    if (self = [super init]) {
+        _foodNumber = 1;
+    }
+    return self;
+}
+
 - (NSString *)foodInfo{
     return [NSString stringWithFormat:@"%@ / %@", _foodName, _foodPrice];
 }

@@ -14,8 +14,13 @@
 @property(nonatomic, weak) IBOutlet UIImageView *imageviewSelect;
 @property(nonatomic, weak) IBOutlet UILabel *lblFoodMessage;
 @property(nonatomic, weak) IBOutlet UIButton *btnShowImage;
+@property(nonatomic, weak) IBOutlet UILabel *lblNumberTag;
+@property(nonatomic, weak) IBOutlet UILabel *lblNumber;
+@property(nonatomic, weak) IBOutlet UIView *viewChangeNumber;
 
 - (IBAction)didPressedBtnExtend:(id)sender;
+- (IBAction)didPressedBtnMinus:(id)sender;
+- (IBAction)didPressedBtnAdd:(id)sender;
 
 @end
 
@@ -37,10 +42,13 @@
         UIImage *imageSel = nil;
         if (_food.bSelect) {
             imageSel = [UIImage imageNamed:@"hasinvoice_selected.png"];
+            
         }else{
             imageSel = [UIImage imageNamed:@"hasinvoice_normal.png"];
         }
         _imageviewSelect.image = imageSel;
+        
+        [self showNumber:_food.bSelect];
         
         _lblFoodMessage.text = [_food foodInfo];
         
@@ -51,6 +59,17 @@
             imageExtend = [UIImage imageNamed:@"tipIcon_down.png"];
         }
         [_btnShowImage setImage:imageExtend forState:UIControlStateNormal];
+    }
+}
+
+- (void)showNumber:(BOOL)bShow{
+    if (bShow) {
+        _lblNumberTag.hidden = NO;
+        _viewChangeNumber.hidden = NO;
+        _lblNumber.text = [NSString stringWithFormat:@"%d", (int)_food.foodNumber];
+    }else{
+        _lblNumberTag.hidden = YES;
+        _viewChangeNumber.hidden = YES;
     }
 }
 
@@ -66,6 +85,25 @@
     [_btnShowImage setImage:imageExtend forState:UIControlStateNormal];
     
     [[MLXCRestaurantController shareInstance] updateFoodImageRow:_indexPath];
+}
+
+- (IBAction)didPressedBtnMinus:(id)sender{
+    _food.foodNumber --;
+    if (_food.foodNumber < 1) {
+        _food.foodNumber = 1;
+    }
+    
+    if (_food.bSelect) {
+        _lblNumber.text = [NSString stringWithFormat:@"%d", (int)_food.foodNumber];
+    }
+}
+
+- (IBAction)didPressedBtnAdd:(id)sender{
+    _food.foodNumber ++;
+    
+    if (_food.bSelect) {
+        _lblNumber.text = [NSString stringWithFormat:@"%d", (int)_food.foodNumber];
+    }
 }
 
 @end

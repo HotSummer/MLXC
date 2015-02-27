@@ -8,6 +8,7 @@
 
 #import "MLXCRestaurantManager.h"
 #import "MLXCRestaurantInput.h"
+#import "MLXCRestaurantFood.h"
 #import "ReflectHeader.h"
 
 @implementation MLXCRestaurantManager
@@ -49,6 +50,39 @@ DEFINE_SINGLETON(MLXCRestaurantManager);
             
         }
     }];
+}
+
+- (NSDictionary *)readSelectFoods{
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    NSDictionary *dicSelectFoods = [userDefault objectForKey:SelectFoodsKey];
+    return dicSelectFoods;
+}
+
+- (void)saveSelectFoods{
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+    
+    NSDictionary *dic = [self readSelectFoods];
+    NSMutableDictionary *mutableDic = [NSMutableDictionary dictionaryWithDictionary:dic];
+    
+    NSMutableArray *selectedFoods = [NSMutableArray array];
+    for (MLXCRestaurantFood *food in _restaurantFoodList.foods) {
+        if (food.bSelect) {
+            NSDictionary *dicSelectFood = [Reflection dictionaryFromObject:food];
+            [selectedFoods addObject:dicSelectFood];
+        }
+    }
+    
+    if (!dic) {//本地没有选择的食品
+        if (_restaurantFoodList) {
+            NSDictionary *dicRestaurant = @{_restaurantFoodList.restaurantId:selectedFoods};
+            [userDefault setObject:dicRestaurant forKey:SelectFoodsKey];
+            [userDefault synchronize];
+        }
+    }else{
+        [mutableDic setObject:selectedFoods forKey:_restaurantFoodList.restaurantId];
+        [userDefault setObject:mutableDic forKey:SelectFoodsKey];
+        [userDefault synchronize];
+    }
 }
 
 @end

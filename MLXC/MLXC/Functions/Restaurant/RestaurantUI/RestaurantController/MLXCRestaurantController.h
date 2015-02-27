@@ -60,10 +60,24 @@ DECLARE_AS_SINGLETON(MLXCRestaurantController);
 - (void)selectFood:(NSIndexPath *)indexPath;
 
 /**
- *  更新食品的图片显示，展开或者缩进一行图片
+ *  食品信息cell的高度，如果选择了该食品，高度为75 否则44
+ *
+ *  @param indexPath 食品位置
+ *
+ *  @return cell的高度
+ */
+- (CGFloat)foodMessageCellHeight:(NSIndexPath *)indexPath;
+
+/**
+ *  展开或者缩进一行食品的图片
  *
  *  @param indexPath 食品位置
  */
 - (void)updateFoodImageRow:(NSIndexPath *)indexPath;
+
+/**
+ *  将选择的食品保存到本地
+ */
+- (void)saveSelectFood;
 
 @end

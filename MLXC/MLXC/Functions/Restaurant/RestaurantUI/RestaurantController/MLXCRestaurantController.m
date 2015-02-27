@@ -75,7 +75,19 @@ DEFINE_SINGLETON(MLXCRestaurantController);
 - (void)selectFood:(NSIndexPath *)indexPath{
     MLXCRestaurantFood *food = [MLXCRestaurantManager shareInstance].restaurantFoodList.foods[indexPath.section];
     food.bSelect = !food.bSelect;
+    if (!food.bSelect) {
+        food.foodNumber = 1;
+    }
     [_foodListVC reloadData];
+}
+
+- (CGFloat)foodMessageCellHeight:(NSIndexPath *)indexPath{
+    MLXCRestaurantFood *food = [MLXCRestaurantManager shareInstance].restaurantFoodList.foods[indexPath.section];
+    if (food.bSelect) {
+        return 75.0f;
+    }else{
+        return 44.0f;
+    }
 }
 
 - (void)updateFoodImageRow:(NSIndexPath *)indexPath{
@@ -85,6 +97,10 @@ DEFINE_SINGLETON(MLXCRestaurantController);
     }else{
         [_foodListVC removeRow:indexPath];
     }
+}
+
+- (void)saveSelectFood{
+    [[MLXCRestaurantManager shareInstance] saveSelectFoods];
 }
 
 #pragma mark - tableview datasource

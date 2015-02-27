@@ -7,6 +7,7 @@
 //
 
 #import "MLXCRestaurantListCell.h"
+#import "UIImageView+MLXCImageView.h"
 
 @interface MLXCRestaurantListCell ()
 
@@ -36,6 +37,7 @@
         _lblRestaurantName.text = _restaurant.restaurantName;
         _lblRestaurantPrice.text = _restaurant.restaurantPrice;
         _lblRestaurantAddress.text = _restaurant.restaurantAddress;
+        [_imageviewRestaurant sd_setImageWithString:_restaurant.restaurantSmallImageUrl placeholderImage:kPlaceHolderImage];
     }
 }
 

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <scenes>
+        <!--Checkout View Controller-->
+        <scene sceneID="8SX-CX-nMR">
+            <objects>
+                <viewController storyboardIdentifier="MLXCCheckoutViewControllerStoryboardId" id="04V-1H-aXy" customClass="MLXCCheckoutViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BFd-zw-ZgQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="sHj-QT-gWi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7nC-Tj-ujP">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="s4O-sn-sIY">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MLXCRestaurantNameCellIndentifier" id="qFL-G3-6f0" customClass="MLXCRestaurantNameCell">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qFL-G3-6f0" id="Hp2-bY-Dt0">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="东北水饺" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdp-Mu-STn">
+                                                    <rect key="frame" x="10" y="11" width="212" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="kbZ-M3-hyf"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4份" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OZG-LO-dvz">
+                                                    <rect key="frame" x="230" y="11" width="40" height="21"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="KBO-vv-bB5"/>
+                                                        <constraint firstAttribute="width" constant="40" id="lYF-bD-fJT"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tipIcon_down" translatesAutoresizingMaskIntoConstraints="NO" id="xiE-J3-ptY">
+                                                    <rect key="frame" x="299" y="18" width="11" height="7"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="11" id="N4k-JN-OGG"/>
+                                                        <constraint firstAttribute="height" constant="7" id="aID-DG-vdr"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerY" secondItem="OZG-LO-dvz" secondAttribute="centerY" id="2rK-Wb-eQB"/>
+                                                <constraint firstAttribute="trailing" secondItem="OZG-LO-dvz" secondAttribute="trailing" constant="50" id="2sI-eN-0qc"/>
+                                                <constraint firstAttribute="trailing" secondItem="xiE-J3-ptY" secondAttribute="trailing" constant="10" id="2uM-8V-2Rq"/>
+                                                <constraint firstAttribute="centerY" secondItem="jdp-Mu-STn" secondAttribute="centerY" id="7ez-Po-o06"/>
+                                                <constraint firstItem="OZG-LO-dvz" firstAttribute="leading" secondItem="jdp-Mu-STn" secondAttribute="trailing" constant="8" id="fxm-V9-dgJ"/>
+                                                <constraint firstItem="jdp-Mu-STn" firstAttribute="leading" secondItem="Hp2-bY-Dt0" secondAttribute="leading" constant="10" id="mWC-G1-Aob"/>
+                                                <constraint firstAttribute="centerY" secondItem="xiE-J3-ptY" secondAttribute="centerY" id="r7d-k9-ah6"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="delegate" destination="04V-1H-aXy" id="Gun-Qd-2sb"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="s4O-sn-sIY" firstAttribute="top" secondItem="BFd-zw-ZgQ" secondAttribute="bottom" id="1EG-yi-75a"/>
+                            <constraint firstItem="s4O-sn-sIY" firstAttribute="leading" secondItem="7nC-Tj-ujP" secondAttribute="leading" id="aMQ-Nb-Eve"/>
+                            <constraint firstItem="sHj-QT-gWi" firstAttribute="top" secondItem="s4O-sn-sIY" secondAttribute="bottom" id="adQ-4t-Cpf"/>
+                            <constraint firstAttribute="trailing" secondItem="s4O-sn-sIY" secondAttribute="trailing" id="uCL-8v-w6n"/>
+                        </constraints>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="tableRestaurant" destination="s4O-sn-sIY" id="NQV-0K-Epb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6eQ-cv-J8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="395" y="346"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="tipIcon_down" width="11" height="7"/>
+    </resources>
+</document>

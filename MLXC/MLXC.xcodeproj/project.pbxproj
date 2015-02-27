@@ -65,11 +65,6 @@
 		4EF9F0231A9DBD970074D0D9 /* MLXCRestaurantListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0221A9DBD970074D0D9 /* MLXCRestaurantListCell.m */; };
 		4EF9F0281A9DCF9E0074D0D9 /* Back.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F0271A9DCF9E0074D0D9 /* Back.xib */; };
 		4EF9F02D1A9DD16F0074D0D9 /* UIViewController+Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F02C1A9DD16F0074D0D9 /* UIViewController+Bar.m */; };
-		4EF9F0301A9DD1BA0074D0D9 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F02F1A9DD1BA0074D0D9 /* back@2x.png */; };
-		4EF9F03B1A9EBD130074D0D9 /* hasinvoice_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F0391A9EBD130074D0D9 /* hasinvoice_normal@2x.png */; };
-		4EF9F03C1A9EBD130074D0D9 /* hasinvoice_selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F03A1A9EBD130074D0D9 /* hasinvoice_selected@2x.png */; };
-		4EF9F03F1A9EBF190074D0D9 /* tipIcon_down@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F03D1A9EBF190074D0D9 /* tipIcon_down@2x.png */; };
-		4EF9F0401A9EBF190074D0D9 /* tipIcon_up@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F03E1A9EBF190074D0D9 /* tipIcon_up@2x.png */; };
 		4EF9F0461A9EC3F40074D0D9 /* MLXCRestaurantFoodList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0451A9EC3F40074D0D9 /* MLXCRestaurantFoodList.m */; };
 		4EF9F0491A9EC40B0074D0D9 /* MLXCRestaurantFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0481A9EC40B0074D0D9 /* MLXCRestaurantFood.m */; };
 		4EF9F04C1A9ECB850074D0D9 /* MLXCRestaurantFoodListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F04B1A9ECB850074D0D9 /* MLXCRestaurantFoodListViewController.m */; };
@@ -91,6 +86,16 @@
 		4EF9F08A1A9F1DD00074D0D9 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F07B1A9F1DCF0074D0D9 /* UIImageView+WebCache.m */; };
 		4EF9F08B1A9F1DD00074D0D9 /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F07D1A9F1DD00074D0D9 /* UIView+WebCacheOperation.m */; };
 		4EF9F08E1A9F202A0074D0D9 /* UIImageView+MLXCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F08D1A9F202A0074D0D9 /* UIImageView+MLXCImageView.m */; };
+		4EF9F09E1AA023240074D0D9 /* MLXCCheckoutFoodList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F09D1AA023240074D0D9 /* MLXCCheckoutFoodList.m */; };
+		4EF9F0A11AA023440074D0D9 /* MLXCCheckoutFood.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0A01AA023440074D0D9 /* MLXCCheckoutFood.m */; };
+		4EF9F0A41AA03E190074D0D9 /* MLXCCheckoutManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0A31AA03E190074D0D9 /* MLXCCheckoutManager.m */; };
+		4EF9F0AC1AA05EA00074D0D9 /* MLXCCheckoutInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0AB1AA05EA00074D0D9 /* MLXCCheckoutInput.m */; };
+		4EF9F0B31AA0673C0074D0D9 /* MLXCCheckoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0B21AA0673C0074D0D9 /* MLXCCheckoutViewController.m */; };
+		4EF9F0B61AA069260074D0D9 /* Checkout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EF9F0B51AA069260074D0D9 /* Checkout.storyboard */; };
+		4EF9F0B91AA070AB0074D0D9 /* MLXCCheckoutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0B81AA070AB0074D0D9 /* MLXCCheckoutController.m */; };
+		4EF9F0BF1AA077550074D0D9 /* MLXCRestaurantNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0BE1AA077550074D0D9 /* MLXCRestaurantNameCell.m */; };
+		4EF9F0C21AA078F20074D0D9 /* MLXCCheckoutInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0C11AA078F20074D0D9 /* MLXCCheckoutInterface.m */; };
+		4EF9F0C51AA07A570074D0D9 /* MLXCMainInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0C41AA07A570074D0D9 /* MLXCMainInput.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -224,11 +229,6 @@
 		4EF9F0271A9DCF9E0074D0D9 /* Back.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Back.xib; sourceTree = "<group>"; };
 		4EF9F02B1A9DD16F0074D0D9 /* UIViewController+Bar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Bar.h"; sourceTree = "<group>"; };
 		4EF9F02C1A9DD16F0074D0D9 /* UIViewController+Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Bar.m"; sourceTree = "<group>"; };
-		4EF9F02F1A9DD1BA0074D0D9 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
-		4EF9F0391A9EBD130074D0D9 /* hasinvoice_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hasinvoice_normal@2x.png"; sourceTree = "<group>"; };
-		4EF9F03A1A9EBD130074D0D9 /* hasinvoice_selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hasinvoice_selected@2x.png"; sourceTree = "<group>"; };
-		4EF9F03D1A9EBF190074D0D9 /* tipIcon_down@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipIcon_down@2x.png"; sourceTree = "<group>"; };
-		4EF9F03E1A9EBF190074D0D9 /* tipIcon_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tipIcon_up@2x.png"; sourceTree = "<group>"; };
 		4EF9F0441A9EC3F40074D0D9 /* MLXCRestaurantFoodList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCRestaurantFoodList.h; sourceTree = "<group>"; };
 		4EF9F0451A9EC3F40074D0D9 /* MLXCRestaurantFoodList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCRestaurantFoodList.m; sourceTree = "<group>"; };
 		4EF9F0471A9EC40B0074D0D9 /* MLXCRestaurantFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCRestaurantFood.h; sourceTree = "<group>"; };
@@ -273,6 +273,26 @@
 		4EF9F08C1A9F202A0074D0D9 /* UIImageView+MLXCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+MLXCImageView.h"; sourceTree = "<group>"; };
 		4EF9F08D1A9F202A0074D0D9 /* UIImageView+MLXCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+MLXCImageView.m"; sourceTree = "<group>"; };
 		4EF9F0901A9F216D0074D0D9 /* MLXCDefaultUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCDefaultUI.h; sourceTree = "<group>"; };
+		4EF9F09C1AA023240074D0D9 /* MLXCCheckoutFoodList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCCheckoutFoodList.h; sourceTree = "<group>"; };
+		4EF9F09D1AA023240074D0D9 /* MLXCCheckoutFoodList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCCheckoutFoodList.m; sourceTree = "<group>"; };
+		4EF9F09F1AA023440074D0D9 /* MLXCCheckoutFood.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCCheckoutFood.h; sourceTree = "<group>"; };
+		4EF9F0A01AA023440074D0D9 /* MLXCCheckoutFood.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCCheckoutFood.m; sourceTree = "<group>"; };
+		4EF9F0A21AA03E190074D0D9 /* MLXCCheckoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCCheckoutManager.h; sourceTree = "<group>"; };
+		4EF9F0A31AA03E190074D0D9 /* MLXCCheckoutManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCCheckoutManager.m; sourceTree = "<group>"; };
+		4EF9F0A91AA041420074D0D9 /* MLXCCommonDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCCommonDefine.h; sourceTree = "<group>"; };
+		4EF9F0AA1AA05EA00074D0D9 /* MLXCCheckoutInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCCheckoutInput.h; sourceTree = "<group>"; };
+		4EF9F0AB1AA05EA00074D0D9 /* MLXCCheckoutInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCCheckoutInput.m; sourceTree = "<group>"; };
+		4EF9F0B11AA0673C0074D0D9 /* MLXCCheckoutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCCheckoutViewController.h; sourceTree = "<group>"; };
+		4EF9F0B21AA0673C0074D0D9 /* MLXCCheckoutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCCheckoutViewController.m; sourceTree = "<group>"; };
+		4EF9F0B51AA069260074D0D9 /* Checkout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Checkout.storyboard; sourceTree = "<group>"; };
+		4EF9F0B71AA070AB0074D0D9 /* MLXCCheckoutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCCheckoutController.h; sourceTree = "<group>"; };
+		4EF9F0B81AA070AB0074D0D9 /* MLXCCheckoutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCCheckoutController.m; sourceTree = "<group>"; };
+		4EF9F0BD1AA077550074D0D9 /* MLXCRestaurantNameCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCRestaurantNameCell.h; sourceTree = "<group>"; };
+		4EF9F0BE1AA077550074D0D9 /* MLXCRestaurantNameCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCRestaurantNameCell.m; sourceTree = "<group>"; };
+		4EF9F0C01AA078F20074D0D9 /* MLXCCheckoutInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCCheckoutInterface.h; sourceTree = "<group>"; };
+		4EF9F0C11AA078F20074D0D9 /* MLXCCheckoutInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCCheckoutInterface.m; sourceTree = "<group>"; };
+		4EF9F0C31AA07A570074D0D9 /* MLXCMainInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCMainInput.h; sourceTree = "<group>"; };
+		4EF9F0C41AA07A570074D0D9 /* MLXCMainInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCMainInput.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -367,6 +387,7 @@
 			isa = PBXGroup;
 			children = (
 				4EF9EEF71A9D80680074D0D9 /* SummerDefine.h */,
+				4EF9F0A91AA041420074D0D9 /* MLXCCommonDefine.h */,
 			);
 			path = Defination;
 			sourceTree = "<group>";
@@ -374,6 +395,7 @@
 		4EF9EEF51A9D80470074D0D9 /* Functions */ = {
 			isa = PBXGroup;
 			children = (
+				4EF9F0931AA00AB10074D0D9 /* Checkout */,
 				4EF9EF9A1A9DB3470074D0D9 /* Main */,
 				4EF9EEF81A9D9DB20074D0D9 /* Restaurant */,
 			);
@@ -443,6 +465,7 @@
 		4EF9EF011A9D9EA80074D0D9 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				4EF9F0B41AA068F70074D0D9 /* Checkout */,
 				4EF9EFA11A9DB3E80074D0D9 /* Main */,
 				4EF9EF021A9D9EA80074D0D9 /* Restaurant */,
 			);
@@ -616,6 +639,8 @@
 		4EF9EF9B1A9DB3CB0074D0D9 /* MainInput */ = {
 			isa = PBXGroup;
 			children = (
+				4EF9F0C31AA07A570074D0D9 /* MLXCMainInput.h */,
+				4EF9F0C41AA07A570074D0D9 /* MLXCMainInput.m */,
 			);
 			path = MainInput;
 			sourceTree = "<group>";
@@ -809,8 +834,6 @@
 		4EF9F0291A9DCFBD0074D0D9 /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				4EF9F0341A9EBCA60074D0D9 /* Restaurant */,
-				4EF9F02E1A9DD1BA0074D0D9 /* Global */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -826,25 +849,6 @@
 				4EF9F08D1A9F202A0074D0D9 /* UIImageView+MLXCImageView.m */,
 			);
 			path = ViewCategory;
-			sourceTree = "<group>";
-		};
-		4EF9F02E1A9DD1BA0074D0D9 /* Global */ = {
-			isa = PBXGroup;
-			children = (
-				4EF9F02F1A9DD1BA0074D0D9 /* back@2x.png */,
-			);
-			path = Global;
-			sourceTree = "<group>";
-		};
-		4EF9F0341A9EBCA60074D0D9 /* Restaurant */ = {
-			isa = PBXGroup;
-			children = (
-				4EF9F03D1A9EBF190074D0D9 /* tipIcon_down@2x.png */,
-				4EF9F03E1A9EBF190074D0D9 /* tipIcon_up@2x.png */,
-				4EF9F0391A9EBD130074D0D9 /* hasinvoice_normal@2x.png */,
-				4EF9F03A1A9EBD130074D0D9 /* hasinvoice_selected@2x.png */,
-			);
-			path = Restaurant;
 			sourceTree = "<group>";
 		};
 		4EF9F0601A9F1DCF0074D0D9 /* SDWebImage */ = {
@@ -889,6 +893,109 @@
 				4EF9F0901A9F216D0074D0D9 /* MLXCDefaultUI.h */,
 			);
 			path = MLXCBaseUI;
+			sourceTree = "<group>";
+		};
+		4EF9F0931AA00AB10074D0D9 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F0941AA00AB10074D0D9 /* CheckoutInput */,
+				4EF9F0951AA00AB10074D0D9 /* CheckoutInterface */,
+				4EF9F0961AA00AB10074D0D9 /* CheckoutManager */,
+				4EF9F0971AA00AB10074D0D9 /* CheckoutModel */,
+				4EF9F0981AA00AB10074D0D9 /* CheckoutUI */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		4EF9F0941AA00AB10074D0D9 /* CheckoutInput */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F0AA1AA05EA00074D0D9 /* MLXCCheckoutInput.h */,
+				4EF9F0AB1AA05EA00074D0D9 /* MLXCCheckoutInput.m */,
+			);
+			path = CheckoutInput;
+			sourceTree = "<group>";
+		};
+		4EF9F0951AA00AB10074D0D9 /* CheckoutInterface */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F0C01AA078F20074D0D9 /* MLXCCheckoutInterface.h */,
+				4EF9F0C11AA078F20074D0D9 /* MLXCCheckoutInterface.m */,
+			);
+			path = CheckoutInterface;
+			sourceTree = "<group>";
+		};
+		4EF9F0961AA00AB10074D0D9 /* CheckoutManager */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F0A21AA03E190074D0D9 /* MLXCCheckoutManager.h */,
+				4EF9F0A31AA03E190074D0D9 /* MLXCCheckoutManager.m */,
+			);
+			path = CheckoutManager;
+			sourceTree = "<group>";
+		};
+		4EF9F0971AA00AB10074D0D9 /* CheckoutModel */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F09C1AA023240074D0D9 /* MLXCCheckoutFoodList.h */,
+				4EF9F09D1AA023240074D0D9 /* MLXCCheckoutFoodList.m */,
+				4EF9F09F1AA023440074D0D9 /* MLXCCheckoutFood.h */,
+				4EF9F0A01AA023440074D0D9 /* MLXCCheckoutFood.m */,
+			);
+			path = CheckoutModel;
+			sourceTree = "<group>";
+		};
+		4EF9F0981AA00AB10074D0D9 /* CheckoutUI */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F0AD1AA065920074D0D9 /* CheckoutController */,
+				4EF9F0AE1AA065920074D0D9 /* CheckoutView */,
+			);
+			path = CheckoutUI;
+			sourceTree = "<group>";
+		};
+		4EF9F0AD1AA065920074D0D9 /* CheckoutController */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F0B71AA070AB0074D0D9 /* MLXCCheckoutController.h */,
+				4EF9F0B81AA070AB0074D0D9 /* MLXCCheckoutController.m */,
+			);
+			path = CheckoutController;
+			sourceTree = "<group>";
+		};
+		4EF9F0AE1AA065920074D0D9 /* CheckoutView */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F0AF1AA065920074D0D9 /* UIView */,
+				4EF9F0B01AA065920074D0D9 /* UIViewController */,
+			);
+			path = CheckoutView;
+			sourceTree = "<group>";
+		};
+		4EF9F0AF1AA065920074D0D9 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F0BD1AA077550074D0D9 /* MLXCRestaurantNameCell.h */,
+				4EF9F0BE1AA077550074D0D9 /* MLXCRestaurantNameCell.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		4EF9F0B01AA065920074D0D9 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F0B11AA0673C0074D0D9 /* MLXCCheckoutViewController.h */,
+				4EF9F0B21AA0673C0074D0D9 /* MLXCCheckoutViewController.m */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		4EF9F0B41AA068F70074D0D9 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				4EF9F0B51AA069260074D0D9 /* Checkout.storyboard */,
+			);
+			path = Checkout;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -972,16 +1079,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EF9F03C1A9EBD130074D0D9 /* hasinvoice_selected@2x.png in Resources */,
 				4EF9EFA31A9DB3E80074D0D9 /* Main.storyboard in Resources */,
-				4EF9F0401A9EBF190074D0D9 /* tipIcon_up@2x.png in Resources */,
+				4EF9F0B61AA069260074D0D9 /* Checkout.storyboard in Resources */,
 				4EF9F0281A9DCF9E0074D0D9 /* Back.xib in Resources */,
 				4EF9EF041A9D9EC10074D0D9 /* Restaurant.storyboard in Resources */,
 				4EF9EEA61A9D66E20074D0D9 /* LaunchScreen.xib in Resources */,
 				4EF9EEA31A9D66E20074D0D9 /* Images.xcassets in Resources */,
-				4EF9F0301A9DD1BA0074D0D9 /* back@2x.png in Resources */,
-				4EF9F03F1A9EBF190074D0D9 /* tipIcon_down@2x.png in Resources */,
-				4EF9F03B1A9EBD130074D0D9 /* hasinvoice_normal@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1002,6 +1105,7 @@
 				4EF9EFD31A9DBC7F0074D0D9 /* AFHTTPRequestOperation.m in Sources */,
 				4EF9F0491A9EC40B0074D0D9 /* MLXCRestaurantFood.m in Sources */,
 				4EF9EF491A9DA77A0074D0D9 /* MLXCRestaurantList.m in Sources */,
+				4EF9F0A11AA023440074D0D9 /* MLXCCheckoutFood.m in Sources */,
 				4EF9F0831A9F1DD00074D0D9 /* SDWebImageDownloaderOperation.m in Sources */,
 				4EF9EF841A9DA8770074D0D9 /* AFNetWorkRequest.m in Sources */,
 				4EF9EF8B1A9DA8770074D0D9 /* Reflection.m in Sources */,
@@ -1031,13 +1135,16 @@
 				4EF9EFA81A9DB4200074D0D9 /* MLXCMainViewController.m in Sources */,
 				4EF9EF7E1A9DA8770074D0D9 /* NetConfigModelDefaultManager.m in Sources */,
 				4EF9EF831A9DA8770074D0D9 /* NetConfigDefaultReflect.m in Sources */,
+				4EF9F0C21AA078F20074D0D9 /* MLXCCheckoutInterface.m in Sources */,
 				4EF9F0811A9F1DD00074D0D9 /* SDWebImageDecoder.m in Sources */,
 				4EF9EFD81A9DBC7F0074D0D9 /* AFURLConnectionOperation.m in Sources */,
 				4EF9EF861A9DA8770074D0D9 /* NetConfigRequestDataDefaultManager.m in Sources */,
+				4EF9F09E1AA023240074D0D9 /* MLXCCheckoutFoodList.m in Sources */,
 				4EF9EFDE1A9DBC7F0074D0D9 /* UIAlertView+AFNetworking.m in Sources */,
 				4EF9EFD91A9DBC7F0074D0D9 /* AFURLRequestSerialization.m in Sources */,
 				4EF9F0801A9F1DD00074D0D9 /* SDWebImageCompat.m in Sources */,
 				4EF9EF991A9DB2410074D0D9 /* MLXCRestaurantController.m in Sources */,
+				4EF9F0B91AA070AB0074D0D9 /* MLXCCheckoutController.m in Sources */,
 				4EF9F0861A9F1DD00074D0D9 /* UIButton+WebCache.m in Sources */,
 				4EF9EF8C1A9DA8770074D0D9 /* ReflectionException.m in Sources */,
 				4EF9EF851A9DA8770074D0D9 /* WMAFNetWorkRequest.m in Sources */,
@@ -1048,8 +1155,12 @@
 				4EF9EF7F1A9DA8770074D0D9 /* NetConfigManager.m in Sources */,
 				4EF9EF881A9DA8770074D0D9 /* WMNetConfigSign.m in Sources */,
 				4EF9F0821A9F1DD00074D0D9 /* SDWebImageDownloader.m in Sources */,
+				4EF9F0BF1AA077550074D0D9 /* MLXCRestaurantNameCell.m in Sources */,
 				4EF9F02D1A9DD16F0074D0D9 /* UIViewController+Bar.m in Sources */,
+				4EF9F0AC1AA05EA00074D0D9 /* MLXCCheckoutInput.m in Sources */,
 				4EF9F07F1A9F1DD00074D0D9 /* SDImageCache.m in Sources */,
+				4EF9F0C51AA07A570074D0D9 /* MLXCMainInput.m in Sources */,
+				4EF9F0A41AA03E190074D0D9 /* MLXCCheckoutManager.m in Sources */,
 				4EF9EFD61A9DBC7F0074D0D9 /* AFNetworkReachabilityManager.m in Sources */,
 				4EF9F0231A9DBD970074D0D9 /* MLXCRestaurantListCell.m in Sources */,
 				4EF9EF931A9DA9ED0074D0D9 /* MLXCRestaurantManager.m in Sources */,
@@ -1064,6 +1175,7 @@
 				4EF9EE951A9D66E20074D0D9 /* main.m in Sources */,
 				4EF9EF961A9DAA770074D0D9 /* MLXCRestaurantInput.m in Sources */,
 				4EF9EF8A1A9DA8770074D0D9 /* ReadValue.m in Sources */,
+				4EF9F0B31AA0673C0074D0D9 /* MLXCCheckoutViewController.m in Sources */,
 				4EF9F05B1A9F0A710074D0D9 /* MLXCFoodListCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
