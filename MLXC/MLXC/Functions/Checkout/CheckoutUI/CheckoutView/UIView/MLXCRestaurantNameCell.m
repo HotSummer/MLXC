@@ -8,6 +8,13 @@
 
 #import "MLXCRestaurantNameCell.h"
 
+@interface MLXCRestaurantNameCell ()
+
+@property(nonatomic, weak) IBOutlet UILabel *lblName;
+@property(nonatomic, weak) IBOutlet UILabel *lblNumber;
+
+@end
+
 @implementation MLXCRestaurantNameCell
 
 - (void)awakeFromNib {
@@ -18,6 +25,15 @@
     [super setSelected:selected animated:animated];
 
     // Configure the view for the selected state
+}
+
+- (void)setFoodList:(MLXCCheckoutFoodList *)foodList{
+    _foodList = foodList;
+    
+    if (_foodList) {
+        _lblName.text = _foodList.restaurantName;
+        _lblNumber.text = [NSString stringWithFormat:@"%d", (int)[_foodList foodsNumber]];
+    }
 }
 
 @end

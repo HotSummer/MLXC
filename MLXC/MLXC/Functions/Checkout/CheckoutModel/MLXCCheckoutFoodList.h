@@ -14,4 +14,6 @@
 @property(nonatomic, strong) NSString *restaurantName;
 @property(nonatomic, strong) NSArray *foods;
 
+- (NSInteger)foodsNumber;
+
 @end

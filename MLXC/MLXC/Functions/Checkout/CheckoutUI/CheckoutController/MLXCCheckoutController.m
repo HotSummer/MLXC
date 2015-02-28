@@ -39,7 +39,8 @@ DEFINE_SINGLETON(MLXCCheckoutController);
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     MLXCRestaurantNameCell *cell = (MLXCRestaurantNameCell *)[tableView dequeueReusableCellWithIdentifier:@"MLXCRestaurantNameCellIndentifier"];
-    
+    MLXCCheckoutFoodList *foods = [MLXCCheckoutManager shareInstance].selectRestaurants[indexPath.section];
+    cell.foodList = foods;
     return cell;
 }
 

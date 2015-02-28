@@ -16,6 +16,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q5f-A2-cAH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您还没有点餐" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ptv-Q9-TOI">
+                                        <rect key="frame" x="0.0" y="274" width="320" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="Tdl-cq-ctL"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Ptv-Q9-TOI" firstAttribute="leading" secondItem="Q5f-A2-cAH" secondAttribute="leading" id="8xS-37-9G8"/>
+                                    <constraint firstAttribute="centerY" secondItem="Ptv-Q9-TOI" secondAttribute="centerY" id="PfK-IP-koR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ptv-Q9-TOI" secondAttribute="trailing" id="kZk-7t-Zjp"/>
+                                </constraints>
+                            </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="s4O-sn-sIY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -63,19 +83,27 @@
                                                 <constraint firstAttribute="centerY" secondItem="xiE-J3-ptY" secondAttribute="centerY" id="r7d-k9-ah6"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="lblName" destination="jdp-Mu-STn" id="uMg-8x-fl9"/>
+                                            <outlet property="lblNumber" destination="OZG-LO-dvz" id="I1c-OW-Kug"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
-                                    <outlet property="delegate" destination="04V-1H-aXy" id="Gun-Qd-2sb"/>
+                                    <outlet property="delegate" destination="04V-1H-aXy" id="htI-q3-jdr"/>
                                 </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="s4O-sn-sIY" firstAttribute="top" secondItem="BFd-zw-ZgQ" secondAttribute="bottom" id="1EG-yi-75a"/>
+                            <constraint firstItem="Q5f-A2-cAH" firstAttribute="top" secondItem="BFd-zw-ZgQ" secondAttribute="bottom" id="81W-9J-ulM"/>
                             <constraint firstItem="s4O-sn-sIY" firstAttribute="leading" secondItem="7nC-Tj-ujP" secondAttribute="leading" id="aMQ-Nb-Eve"/>
                             <constraint firstItem="sHj-QT-gWi" firstAttribute="top" secondItem="s4O-sn-sIY" secondAttribute="bottom" id="adQ-4t-Cpf"/>
+                            <constraint firstAttribute="trailing" secondItem="Q5f-A2-cAH" secondAttribute="trailing" id="hlo-EW-kkh"/>
                             <constraint firstAttribute="trailing" secondItem="s4O-sn-sIY" secondAttribute="trailing" id="uCL-8v-w6n"/>
+                            <constraint firstItem="sHj-QT-gWi" firstAttribute="top" secondItem="Q5f-A2-cAH" secondAttribute="bottom" id="zOa-KB-d7b"/>
+                            <constraint firstItem="Q5f-A2-cAH" firstAttribute="leading" secondItem="7nC-Tj-ujP" secondAttribute="leading" id="zSc-oo-pSd"/>
                         </constraints>
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
@@ -86,7 +114,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6eQ-cv-J8v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="395" y="346"/>
+            <point key="canvasLocation" x="-7" y="134"/>
         </scene>
     </scenes>
     <resources>

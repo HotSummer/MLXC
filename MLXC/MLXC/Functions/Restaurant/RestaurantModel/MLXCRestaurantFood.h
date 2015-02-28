@@ -12,6 +12,7 @@
 
 @property(nonatomic, strong) NSString *restaurantId;
 @property(nonatomic, strong) NSString *restaurantName;
+@property(nonatomic, strong) NSString *foodId;
 @property(nonatomic, strong) NSString *foodName;
 @property(nonatomic, strong) NSString *foodPrice;
 @property(nonatomic, strong) NSArray *foodImages;

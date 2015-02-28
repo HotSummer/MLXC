@@ -7,11 +7,20 @@
 //
 
 #import "MLXCCheckoutFoodList.h"
+#import "MLXCCheckoutFood.h"
 
 @implementation MLXCCheckoutFoodList
 
 - (NSDictionary *)classForArrayProperty{
     return @{@"foods":@"MLXCCheckoutFood"};
+}
+
+- (NSInteger)foodsNumber{
+    NSInteger number = 0;
+    for (MLXCCheckoutFood *food in _foods) {
+        number += food.foodNumber;
+    }
+    return number;
 }
 
 @end

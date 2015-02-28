@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MLXCCheckoutFoodList.h"
 
 @interface MLXCRestaurantNameCell : UITableViewCell
+
+@property(nonatomic, strong) MLXCCheckoutFoodList *foodList;
 
 @end
