@@ -68,7 +68,8 @@ DEFINE_SINGLETON(MLXCRestaurantManager);
     for (MLXCRestaurantFood *food in _restaurantFoodList.foods) {
         if (food.bSelect) {
             NSDictionary *dicSelectFood = [Reflection dictionaryFromObject:food];
-            [selectedFoods addObject:dicSelectFood];
+            NSMutableDictionary *mutableDicSelectFood = [NSMutableDictionary dictionaryWithDictionary:dicSelectFood];
+            [selectedFoods addObject:mutableDicSelectFood];
         }
     }
     
@@ -79,6 +80,7 @@ DEFINE_SINGLETON(MLXCRestaurantManager);
             [userDefault synchronize];
         }
     }else{
+        
         [mutableDic setObject:selectedFoods forKey:_restaurantFoodList.restaurantId];
         [userDefault setObject:mutableDic forKey:SelectFoodsKey];
         [userDefault synchronize];
