@@ -32,4 +32,11 @@ UITableViewDelegate
  */
 - (void)removeRow:(NSIndexPath *)indexPath;
 
+/**
+ *  显示价格
+ *
+ *  @param price 价格字符串
+ */
+- (void)showPrice:(NSString *)price;
+
 @end

@@ -80,4 +80,9 @@ DECLARE_AS_SINGLETON(MLXCRestaurantController);
  */
 - (void)saveSelectFood;
 
+/**
+ *  更新价格
+ */
+- (void)updatePrice;
+
 @end

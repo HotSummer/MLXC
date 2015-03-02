@@ -54,13 +54,23 @@ DEFINE_SINGLETON(MLXCRestaurantManager);
     }];
 }
 
+- (NSString *)updatePrice{
+    //restaurantFoodList
+    float fTotalPrice = 0;
+    for (MLXCRestaurantFood *food in _restaurantFoodList.foods) {
+        if (food.bSelect) {
+            fTotalPrice += food.foodNumber * [food.foodPrice floatValue];
+        }
+    }
+    return [NSString stringWithFormat:@"%.2f", fTotalPrice];
+}
+
 - (NSArray *)readSelectFoods{
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     NSArray *arrSelectFoods = [userDefault objectForKey:SelectFoodsKey];
     return arrSelectFoods;
 }
 
-//@{SelectFoodsKey:@[restaurant]}
 - (void)saveSelectFoods{
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     

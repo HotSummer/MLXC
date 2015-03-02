@@ -15,6 +15,7 @@
 @property(nonatomic, weak) IBOutlet UITableView *tableRestaurant;
 @property(nonatomic, weak) IBOutlet UIView *viewNoData;
 @property(nonatomic, weak) IBOutlet UIView *viewPrice;
+@property(nonatomic, weak) IBOutlet UILabel *lblPrice;
 
 @end
 
@@ -63,6 +64,10 @@
 
 - (void)reloadData{
     [_tableRestaurant reloadData];
+}
+
+- (void)showPrice:(NSString *)price{
+    _lblPrice.text = [NSString stringWithFormat:@"总金额：￥%@", price];
 }
 
 #pragma mark - tableview delegate

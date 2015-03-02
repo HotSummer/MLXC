@@ -51,6 +51,13 @@ DECLARE_AS_SINGLETON(MLXCRestaurantManager);
 - (void)loadFoodList:(ResponseBlock)block;
 
 /**
+ *  更新价格
+ *
+ *  @return 价格
+ */
+- (NSString *)updatePrice;
+
+/**
  *  读取保存在本地的食品
  *
  *  @return 食品数据

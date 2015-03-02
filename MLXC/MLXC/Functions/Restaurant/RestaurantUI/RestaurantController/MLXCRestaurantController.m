@@ -78,6 +78,7 @@ DEFINE_SINGLETON(MLXCRestaurantController);
     if (!food.bSelect) {
         food.foodNumber = 1;
     }
+    [[MLXCRestaurantController shareInstance] updatePrice];//更新价格
     [_foodListVC reloadData];
 }
 
@@ -101,6 +102,11 @@ DEFINE_SINGLETON(MLXCRestaurantController);
 
 - (void)saveSelectFood{
     [[MLXCRestaurantManager shareInstance] saveSelectFoods];
+}
+
+- (void)updatePrice{
+    NSString *price = [[MLXCRestaurantManager shareInstance] updatePrice];
+    [_foodListVC showPrice:price];
 }
 
 #pragma mark - tableview datasource

@@ -24,6 +24,7 @@ DEFINE_SINGLETON(MLXCCheckoutController);
     }else{
         [_checkoutVC showNoDataView];
     }
+    [self updatePrice];
 }
 
 - (void)reloadCheckoutViewController{
@@ -42,11 +43,18 @@ DEFINE_SINGLETON(MLXCCheckoutController);
 - (void)changeFood:(ChangeFoodType)changeType food:(MLXCCheckoutFood *)selectFood{
     [[MLXCCheckoutManager shareInstance] changeFood:changeType food:selectFood];
     
+    [self updatePrice];
+    
     if ([MLXCCheckoutManager shareInstance].selectRestaurants.count > 0) {
         [self reloadCheckoutViewController];
     }else{
         [_checkoutVC showNoDataView];
     }
+}
+
+- (void)updatePrice{
+    NSString *price = [[MLXCCheckoutManager shareInstance] updatePrice];
+    [_checkoutVC showPrice:price];
 }
 
 #pragma mark - tableview datasource

@@ -15,6 +15,7 @@
 @property(nonatomic, weak) IBOutlet UIView *viewNoData;
 @property(nonatomic, weak) IBOutlet UITableView *tableFood;
 @property(nonatomic, weak) IBOutlet UIView *viewPrice;
+@property(nonatomic, weak) IBOutlet UILabel *lblPrice;
 
 @end
 
@@ -84,6 +85,10 @@
     [_tableFood beginUpdates];
     [_tableFood deleteRowsAtIndexPaths:@[[NSIndexPath indexPathForRow:1 inSection:indexPath.section]] withRowAnimation:UITableViewRowAnimationFade];
     [_tableFood endUpdates];
+}
+
+- (void)showPrice:(NSString *)price{
+    _lblPrice.text = [NSString stringWithFormat:@"总金额：￥%@", price];
 }
 
 /*

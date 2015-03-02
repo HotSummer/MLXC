@@ -298,7 +298,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wR9-IH-geA">
                                 <rect key="frame" x="0.0" y="528" width="320" height="40"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总金额：￥123。0" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hN3-uG-9CI">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="总金额：￥0.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hN3-uG-9CI">
                                         <rect key="frame" x="8" y="9" width="147" height="21"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="3Wr-Gq-SjX"/>
@@ -341,6 +341,7 @@
                     <nil key="simulatedStatusBarMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="lblPrice" destination="hN3-uG-9CI" id="kgq-x2-Ojl"/>
                         <outlet property="tableFood" destination="Xhn-Lk-4iF" id="5gk-wG-hf0"/>
                         <outlet property="viewNoData" destination="wKU-vS-uPN" id="ucV-B3-ZNS"/>
                         <outlet property="viewPrice" destination="wR9-IH-geA" id="6K4-n4-F4N"/>

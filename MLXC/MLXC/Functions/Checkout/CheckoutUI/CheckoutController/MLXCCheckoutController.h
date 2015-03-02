@@ -45,4 +45,10 @@ DECLARE_AS_SINGLETON(MLXCCheckoutController);
  */
 - (void)changeFood:(ChangeFoodType)changeType food:(MLXCCheckoutFood *)selectFood;
 
+/**
+ *  更新价格
+ */
+- (void)updatePrice;
+
+
 @end

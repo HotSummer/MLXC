@@ -102,6 +102,8 @@
     if (_food.bSelect) {
         _lblNumber.text = [NSString stringWithFormat:@"%d", (int)_food.foodNumber];
     }
+    
+    [[MLXCRestaurantController shareInstance] updatePrice];
 }
 
 - (IBAction)didPressedBtnAdd:(id)sender{
@@ -110,6 +112,8 @@
     if (_food.bSelect) {
         _lblNumber.text = [NSString stringWithFormat:@"%d", (int)_food.foodNumber];
     }
+    
+    [[MLXCRestaurantController shareInstance] updatePrice];
 }
 
 @end

@@ -52,6 +52,17 @@ DEFINE_SINGLETON(MLXCCheckoutManager);
     [self saveSelectFoods];
 }
 
+- (NSString *)updatePrice{
+    //restaurantFoodList
+    float fTotalPrice = 0;
+    for (MLXCCheckoutFoodList *foodList in _selectRestaurants) {
+        for (MLXCCheckoutFood *food in foodList.foods) {
+            fTotalPrice += food.foodNumber * [food.foodPrice floatValue];
+        }
+    }
+    return [NSString stringWithFormat:@"%.2f", fTotalPrice];
+}
+
 - (void)saveSelectFoods{
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
 

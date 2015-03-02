@@ -36,6 +36,13 @@ DECLARE_AS_SINGLETON(MLXCCheckoutManager);
 - (void)changeFood:(ChangeFoodType)changeType food:(MLXCCheckoutFood *)selectFood;
 
 /**
+ *  更新价格
+ *
+ *  @return 价格
+ */
+- (NSString *)updatePrice;
+
+/**
  *  保存选择的食品, 结构：@{SelectFoodsKey:@{restaurantId:@[selectfood]}}
  */
 - (void)saveSelectFoods;
