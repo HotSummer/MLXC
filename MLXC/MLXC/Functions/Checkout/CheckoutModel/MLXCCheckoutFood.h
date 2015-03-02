@@ -17,4 +17,6 @@
 @property(nonatomic, strong) NSString *foodPrice;
 @property(nonatomic) NSInteger foodNumber;//份数
 
+- (NSString *)foodInfo;
+
 @end

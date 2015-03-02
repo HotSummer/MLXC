@@ -7,6 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MLXCCheckoutFoodList.h"
+#import "MLXCCheckoutFood.h"
+
+typedef enum {
+    MinusFood = 0,//减少食品数量
+    AddFood,//添加食品数量
+    DeleteFood//删除食品
+}ChangeFoodType;
 
 @interface MLXCCheckoutManager : NSObject
 
@@ -14,6 +22,22 @@
 
 DECLARE_AS_SINGLETON(MLXCCheckoutManager);
 
+/**
+ *  加载选择的食品
+ */
 - (void)loadSelectFood;
+
+/**
+ *  修改食品
+ *
+ *  @param changeType 修改类型
+ *  @param selectFood 修改的食品
+ */
+- (void)changeFood:(ChangeFoodType)changeType food:(MLXCCheckoutFood *)selectFood;
+
+/**
+ *  保存选择的食品, 结构：@{SelectFoodsKey:@{restaurantId:@[selectfood]}}
+ */
+- (void)saveSelectFoods;
 
 @end

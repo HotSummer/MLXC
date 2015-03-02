@@ -10,4 +10,8 @@
 
 @implementation MLXCCheckoutFood
 
+- (NSString *)foodInfo{
+    return [NSString stringWithFormat:@"%@ / %@", _foodName, _foodPrice];
+}
+
 @end

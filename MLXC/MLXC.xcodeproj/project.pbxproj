@@ -96,6 +96,7 @@
 		4EF9F0BF1AA077550074D0D9 /* MLXCRestaurantNameCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0BE1AA077550074D0D9 /* MLXCRestaurantNameCell.m */; };
 		4EF9F0C21AA078F20074D0D9 /* MLXCCheckoutInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0C11AA078F20074D0D9 /* MLXCCheckoutInterface.m */; };
 		4EF9F0C51AA07A570074D0D9 /* MLXCMainInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0C41AA07A570074D0D9 /* MLXCMainInput.m */; };
+		4EF9F0F61AA43DC50074D0D9 /* MLXCRestaurantFoodCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF9F0F51AA43DC50074D0D9 /* MLXCRestaurantFoodCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -293,6 +294,8 @@
 		4EF9F0C11AA078F20074D0D9 /* MLXCCheckoutInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCCheckoutInterface.m; sourceTree = "<group>"; };
 		4EF9F0C31AA07A570074D0D9 /* MLXCMainInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCMainInput.h; sourceTree = "<group>"; };
 		4EF9F0C41AA07A570074D0D9 /* MLXCMainInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCMainInput.m; sourceTree = "<group>"; };
+		4EF9F0F41AA43DC50074D0D9 /* MLXCRestaurantFoodCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MLXCRestaurantFoodCell.h; sourceTree = "<group>"; };
+		4EF9F0F51AA43DC50074D0D9 /* MLXCRestaurantFoodCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MLXCRestaurantFoodCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -977,6 +980,8 @@
 			children = (
 				4EF9F0BD1AA077550074D0D9 /* MLXCRestaurantNameCell.h */,
 				4EF9F0BE1AA077550074D0D9 /* MLXCRestaurantNameCell.m */,
+				4EF9F0F41AA43DC50074D0D9 /* MLXCRestaurantFoodCell.h */,
+				4EF9F0F51AA43DC50074D0D9 /* MLXCRestaurantFoodCell.m */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1162,6 +1167,7 @@
 				4EF9F0C51AA07A570074D0D9 /* MLXCMainInput.m in Sources */,
 				4EF9F0A41AA03E190074D0D9 /* MLXCCheckoutManager.m in Sources */,
 				4EF9EFD61A9DBC7F0074D0D9 /* AFNetworkReachabilityManager.m in Sources */,
+				4EF9F0F61AA43DC50074D0D9 /* MLXCRestaurantFoodCell.m in Sources */,
 				4EF9F0231A9DBD970074D0D9 /* MLXCRestaurantListCell.m in Sources */,
 				4EF9EF931A9DA9ED0074D0D9 /* MLXCRestaurantManager.m in Sources */,
 				4EF9F07E1A9F1DD00074D0D9 /* NSData+ImageContentType.m in Sources */,

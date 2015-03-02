@@ -27,10 +27,10 @@
  @property(nonatomic, strong) NSArray *foodImages;
  */
 + (NSDictionary *)restaurantFoodList{
-    return @{@"restaurantId":@"1001", @"foods":@[@{@"restaurantId":@"1001", @"foodId":@"1001001", @"foodName":@"菌菇混沌9个", @"foodPrice":@"￥10", @"foodImages":@[@"http://img0.bdstatic.com/img/image/shouye/lyxs.jpg", @"http://img0.bdstatic.com/img/image/%E7%94%B0%E5%9B%AD%E9%A3%8E%E5%85%89%E6%96%B9.jpg", @"www.baidu.com/3.jpeg", @"www.baidu.com/4.jpeg"]},
-  @{@"restaurantId":@"1001", @"foodId":@"1001002", @"foodName":@"菌菇混沌13个", @"foodPrice":@"￥15", @"foodImages":@[@"http://img0.bdstatic.com/img/image/63b2ef359345929635a54b877a03074a1409131582.jpg", @"www.baidu.com/2.jpeg", @"http://img0.bdstatic.com/img/image/shouye/lyxs.jpg", @"http://img0.bdstatic.com/img/image/4477414b48e0b8d5686712a009fa3c911408337942.jpg"]},
-  @{@"restaurantId":@"1001", @"foodId":@"1001003", @"foodName":@"荠菜混沌13个", @"foodPrice":@"￥11", @"foodImages":@[@"http://img0.bdstatic.com/img/image/shouye/lygz.jpg", @"http://img0.bdstatic.com/img/image/63b2ef359345929635a54b877a03074a1409131582.jpg", @"www.baidu.com/3.jpeg", @"http://img0.bdstatic.com/img/image/shouye/lyxs.jpg"]},
-  @{@"restaurantId":@"1001", @"foodId":@"1001004", @"foodName":@"鲜肉混沌15个", @"foodPrice":@"￥15", @"foodImages":@[@"http://img0.bdstatic.com/img/image/%E5%BB%BA%E7%AD%91%E6%96%B9.jpg", @"www.baidu.com/2.jpeg", @"www.baidu.com/3.jpeg", @"http://img0.bdstatic.com/img/image/29ae2f8b81c5d4b785b596e2503e7e471409210670.jpg"]}]};
+    return @{@"restaurantId":@"1001", @"restaurantName":@"家常菜馆", @"restaurantPhone":@"13205178165", @"foods":@[@{@"restaurantId":@"1001", @"restaurantName":@"家常菜馆", @"foodId":@"1001001", @"foodName":@"菌菇混沌9个", @"foodPrice":@"￥10", @"foodImages":@[@"http://img0.bdstatic.com/img/image/shouye/lyxs.jpg", @"http://img0.bdstatic.com/img/image/%E7%94%B0%E5%9B%AD%E9%A3%8E%E5%85%89%E6%96%B9.jpg", @"www.baidu.com/3.jpeg", @"www.baidu.com/4.jpeg"]},
+  @{@"restaurantId":@"1001", @"restaurantName":@"家常菜馆", @"foodId":@"1001002", @"foodName":@"菌菇混沌13个", @"foodPrice":@"￥15"},
+  @{@"restaurantId":@"1001", @"restaurantName":@"家常菜馆", @"foodId":@"1001003", @"foodName":@"荠菜混沌13个", @"foodPrice":@"￥11", @"foodImages":@[@"http://img0.bdstatic.com/img/image/shouye/lygz.jpg", @"http://img0.bdstatic.com/img/image/63b2ef359345929635a54b877a03074a1409131582.jpg", @"www.baidu.com/3.jpeg", @"http://img0.bdstatic.com/img/image/shouye/lyxs.jpg"]},
+  @{@"restaurantId":@"1001", @"restaurantName":@"家常菜馆", @"foodId":@"1001004", @"foodName":@"鲜肉混沌15个", @"foodPrice":@"￥15", @"foodImages":@[@"http://img0.bdstatic.com/img/image/%E5%BB%BA%E7%AD%91%E6%96%B9.jpg", @"www.baidu.com/2.jpeg", @"www.baidu.com/3.jpeg", @"http://img0.bdstatic.com/img/image/29ae2f8b81c5d4b785b596e2503e7e471409210670.jpg"]}]};
 }
 
 @end

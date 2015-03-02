@@ -25,10 +25,11 @@ DEFINE_SINGLETON(MLXCRestaurantManager);
 }
 
 - (void)loadRestaurantList:(ResponseBlock)block{
+    __weak MLXCRestaurantManager *wSelf = self;
     [[NetConfigManager shareInstance] request:@"" requestObject:nil responseObject:nil response:^(int code, NSString *message, id content, NSError *error) {
         if (mock) {
             NSArray *mockData = [MLXCRestaurantInput restaurantList];
-            self.restaurantList = (MLXCRestaurantList *)[Reflection objectFromContent:mockData className:@"MLXCRestaurantList"];
+            wSelf.restaurantList = (MLXCRestaurantList *)[Reflection objectFromContent:mockData className:@"MLXCRestaurantList"];
             block(200, nil, self.restaurantList, nil);
         }else{
             
@@ -41,10 +42,11 @@ DEFINE_SINGLETON(MLXCRestaurantManager);
 }
 
 - (void)loadFoodList:(ResponseBlock)block{
+    __weak MLXCRestaurantManager *wSelf = self;
     [[NetConfigManager shareInstance] request:@"" requestObject:nil responseObject:nil response:^(int code, NSString *message, id content, NSError *error) {
         if (mock) {
             NSDictionary *mockData = [MLXCRestaurantInput restaurantFoodList];
-            self.restaurantFoodList = (MLXCRestaurantFoodList *)[Reflection objectFromContent:mockData className:@"MLXCRestaurantFoodList"];
+            wSelf.restaurantFoodList = (MLXCRestaurantFoodList *)[Reflection objectFromContent:mockData className:@"MLXCRestaurantFoodList"];
             block(200, nil, self.restaurantList, nil);
         }else{
             
@@ -52,17 +54,17 @@ DEFINE_SINGLETON(MLXCRestaurantManager);
     }];
 }
 
-- (NSDictionary *)readSelectFoods{
+- (NSArray *)readSelectFoods{
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    NSDictionary *dicSelectFoods = [userDefault objectForKey:SelectFoodsKey];
-    return dicSelectFoods;
+    NSArray *arrSelectFoods = [userDefault objectForKey:SelectFoodsKey];
+    return arrSelectFoods;
 }
 
+//@{SelectFoodsKey:@[restaurant]}
 - (void)saveSelectFoods{
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
     
-    NSDictionary *dic = [self readSelectFoods];
-    NSMutableDictionary *mutableDic = [NSMutableDictionary dictionaryWithDictionary:dic];
+    NSArray *restuarantsOld = [self readSelectFoods];
     
     NSMutableArray *selectedFoods = [NSMutableArray array];
     for (MLXCRestaurantFood *food in _restaurantFoodList.foods) {
@@ -72,17 +74,25 @@ DEFINE_SINGLETON(MLXCRestaurantManager);
             [selectedFoods addObject:mutableDicSelectFood];
         }
     }
-    
-    if (!dic) {//本地没有选择的食品
+    if (!restuarantsOld) {//本地没有选择的食品
         if (_restaurantFoodList) {
-            NSDictionary *dicRestaurant = @{_restaurantFoodList.restaurantId:selectedFoods};
-            [userDefault setObject:dicRestaurant forKey:SelectFoodsKey];
+            NSArray *restaurants = @[@{@"foods":selectedFoods, @"restaurantId":_restaurantFoodList.restaurantId, @"restaurantName":_restaurantFoodList.restaurantName, @"restaurantPhone":_restaurantFoodList.restaurantPhone}];
+            
+            [userDefault setObject:restaurants forKey:SelectFoodsKey];
             [userDefault synchronize];
         }
     }else{
+        NSDictionary *restaurant = @{@"foods":selectedFoods, @"restaurantId":_restaurantFoodList.restaurantId, @"restaurantName":_restaurantFoodList.restaurantName, @"restaurantPhone":_restaurantFoodList.restaurantPhone};
         
-        [mutableDic setObject:selectedFoods forKey:_restaurantFoodList.restaurantId];
-        [userDefault setObject:mutableDic forKey:SelectFoodsKey];
+        NSMutableArray *restaurantNew = [NSMutableArray array];
+        for (NSDictionary *dic in restuarantsOld) {
+            if (![dic[@"restaurantId"] isEqualToString:_restaurantFoodList.restaurantId]) {
+                [restaurantNew addObject:dic];
+            }
+        }
+        [restaurantNew addObject:restaurant];
+        
+        [userDefault setObject:restaurantNew forKey:SelectFoodsKey];
         [userDefault synchronize];
     }
 }

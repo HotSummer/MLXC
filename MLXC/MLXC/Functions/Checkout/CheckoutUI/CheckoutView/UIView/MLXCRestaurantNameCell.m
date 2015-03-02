@@ -12,6 +12,9 @@
 
 @property(nonatomic, weak) IBOutlet UILabel *lblName;
 @property(nonatomic, weak) IBOutlet UILabel *lblNumber;
+@property(nonatomic, weak) IBOutlet UILabel *lblPhone;
+
+- (IBAction)didPressedBtnPhone:(id)sender;
 
 @end
 
@@ -32,8 +35,13 @@
     
     if (_foodList) {
         _lblName.text = _foodList.restaurantName;
-        _lblNumber.text = [NSString stringWithFormat:@"%d", (int)[_foodList foodsNumber]];
+        _lblNumber.text = [NSString stringWithFormat:@"份数：%d", (int)[_foodList foodsNumber]];
+        _lblPhone.text = [NSString stringWithFormat:@"预订电话：%@", _foodList.restaurantPhone];
     }
+}
+
+- (IBAction)didPressedBtnPhone:(id)sender{
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:_foodList.restaurantPhone]];
 }
 
 @end

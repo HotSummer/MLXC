@@ -13,6 +13,8 @@
 @interface MLXCCheckoutViewController ()
 
 @property(nonatomic, weak) IBOutlet UITableView *tableRestaurant;
+@property(nonatomic, weak) IBOutlet UIView *viewNoData;
+@property(nonatomic, weak) IBOutlet UIView *viewPrice;
 
 @end
 
@@ -45,7 +47,18 @@
 - (void)showDataView{
     [super showNoDataView];
     
+    _viewNoData.hidden = YES;
+    _tableRestaurant.hidden = NO;
+    _viewPrice.hidden = NO;
     [self reloadData];
+}
+
+- (void)showNoDataView{
+    [super showNoDataView];
+    
+    _viewNoData.hidden = NO;
+    _tableRestaurant.hidden = YES;
+    _viewPrice.hidden = YES;
 }
 
 - (void)reloadData{
@@ -54,7 +67,17 @@
 
 #pragma mark - tableview delegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 44.0;
+    if (indexPath.row == 0) {
+        return 75.0;
+    }else{
+        return 64.0;
+    }
+    
+    return 0;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [[MLXCCheckoutController shareInstance] showSelectFood:indexPath];
 }
 
 @end

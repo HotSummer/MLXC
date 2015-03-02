@@ -12,7 +12,9 @@
 
 @property(nonatomic, strong) NSString *restaurantId;
 @property(nonatomic, strong) NSString *restaurantName;
+@property(nonatomic, strong) NSString *restaurantPhone;
 @property(nonatomic, strong) NSArray *foods;
+@property(nonatomic) BOOL bExtand;
 
 - (NSInteger)foodsNumber;
 

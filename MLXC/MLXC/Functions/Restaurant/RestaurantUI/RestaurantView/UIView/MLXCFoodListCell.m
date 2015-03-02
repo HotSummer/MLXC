@@ -52,13 +52,19 @@
         
         _lblFoodMessage.text = [_food foodInfo];
         
-        UIImage *imageExtend = nil;
-        if (_food.bExtend) {
-            imageExtend = [UIImage imageNamed:@"tipIcon_up.png"];
+        if (_food.foodImages.count > 0) {
+            _btnShowImage.hidden = NO;
         }else{
-            imageExtend = [UIImage imageNamed:@"tipIcon_down.png"];
+            _btnShowImage.hidden = YES;
+            UIImage *imageExtend = nil;
+            if (_food.bExtend) {
+                imageExtend = [UIImage imageNamed:@"tipIcon_up.png"];
+            }else{
+                imageExtend = [UIImage imageNamed:@"tipIcon_down.png"];
+            }
+            [_btnShowImage setImage:imageExtend forState:UIControlStateNormal];
         }
-        [_btnShowImage setImage:imageExtend forState:UIControlStateNormal];
+        
     }
 }
 

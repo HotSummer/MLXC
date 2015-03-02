@@ -10,6 +10,6 @@
 
 @interface MLXCCheckoutInput : NSObject
 
-+ (NSDictionary *)selectFoods;
++ (NSArray *)selectFoods;
 
 @end

@@ -7,9 +7,7 @@
 //
 
 #import "MLXCCheckoutManager.h"
-#import "MLXCCheckoutFoodList.h"
 #import "MLXCCheckoutInput.h"
-#import "MLXCCheckoutFood.h"
 #import "ReflectHeader.h"
 
 @implementation MLXCCheckoutManager
@@ -19,26 +17,53 @@ DEFINE_SINGLETON(MLXCCheckoutManager);
 - (void)loadSelectFood{
     _selectRestaurants = [NSMutableArray array];
     
-    NSDictionary *dicList  = [MLXCCheckoutInput selectFoods];
-    for (NSArray *foods in dicList.allValues) {
-        if (foods.count > 0) {
-            MLXCCheckoutFoodList *foodList = [[MLXCCheckoutFoodList alloc] init];
-            NSMutableArray *arrFoods = [NSMutableArray array];
-            
-            NSString *restaurantId = @"";
-            NSString *restaurantName = @"";
-            for (NSDictionary *food in foods) {
-                MLXCCheckoutFood *foodModel = (MLXCCheckoutFood *)[Reflection objectFromContent:food className:@"MLXCCheckoutFood"];
-                [arrFoods addObject:foodModel];
-                restaurantId = foodModel.restaurantId;
-                restaurantName = foodModel.restaurantName;
-            }
-            foodList.foods = arrFoods;
-            foodList.restaurantId = restaurantId;
-            foodList.restaurantName = restaurantName;
-            [_selectRestaurants addObject:foodList];
-        }
+    NSArray *list  = [MLXCCheckoutInput selectFoods];
+    for (NSDictionary *dic in list) {
+        MLXCCheckoutFoodList *foodModel = (MLXCCheckoutFoodList *)[Reflection objectFromContent:dic className:@"MLXCCheckoutFoodList"];
+        [_selectRestaurants addObject:foodModel];
     }
+}
+
+- (void)changeFood:(ChangeFoodType)changeType food:(MLXCCheckoutFood *)selectFood{
+    if (changeType == MinusFood) {
+        selectFood.foodNumber --;
+        if (selectFood.foodNumber < 1) {
+            selectFood.foodNumber = 1;
+        }
+    }else if (changeType == AddFood) {
+        selectFood.foodNumber ++;
+    }else{
+        NSMutableArray *selectRestaurantsCopy = [NSMutableArray array];
+        for (MLXCCheckoutFoodList *foodList in _selectRestaurants) {
+            //移除选择的食品
+            NSMutableArray *mutableFoodList = [NSMutableArray arrayWithArray:foodList.foods];
+            if ([foodList.restaurantId isEqualToString:selectFood.restaurantId]) {
+                [mutableFoodList removeObject:selectFood];
+                foodList.foods = mutableFoodList;
+            }
+            
+            //如果没有选择的食品，则从店铺列表中删除
+            if (foodList.foods.count > 0) {
+                [selectRestaurantsCopy addObject:foodList];
+            }
+        }
+        _selectRestaurants = selectRestaurantsCopy;
+    }
+    [self saveSelectFoods];
+}
+
+- (void)saveSelectFoods{
+    NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
+
+    NSMutableArray *arrFoods = [NSMutableArray array];
+    for (MLXCCheckoutFoodList *foodList in _selectRestaurants) {
+        NSDictionary *dicFood = [Reflection dictionaryFromObject:foodList];
+        [arrFoods addObject:dicFood];
+    }
+    
+    [userDefault setObject:arrFoods forKey:SelectFoodsKey];
+    [userDefault synchronize];
+    
 }
 
 @end

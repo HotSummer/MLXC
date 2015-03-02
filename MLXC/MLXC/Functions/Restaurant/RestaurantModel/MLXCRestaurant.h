@@ -13,6 +13,7 @@
 @property(nonatomic, strong) NSString *restaurantId;
 @property(nonatomic, strong) NSString *restaurantName;
 @property(nonatomic, strong) NSString *restaurantPrice;
+@property(nonatomic, strong) NSString *restaurantPhone;
 @property(nonatomic, strong) NSString *restaurantAddress;
 @property(nonatomic, strong) NSString *restaurantSmallImageUrl;
 

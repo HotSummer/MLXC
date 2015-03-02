@@ -55,10 +55,10 @@ DECLARE_AS_SINGLETON(MLXCRestaurantManager);
  *
  *  @return 食品数据
  */
-- (NSDictionary *)readSelectFoods;
+- (NSArray *)readSelectFoods;
 
 /**
- *  保存选择的食品, 结构：@{SelectFoodsKey:@{restaurantId:@[selectfood]}}
+ *  保存选择的食品, 结构：@{SelectFoodsKey:@{restaurantId:@[selectfood]}},@{SelectFoodsKey:@[restaurant]}
  */
 - (void)saveSelectFoods;
 

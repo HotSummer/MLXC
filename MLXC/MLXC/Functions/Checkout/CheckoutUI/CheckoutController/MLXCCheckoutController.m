@@ -8,8 +8,7 @@
 
 #import "MLXCCheckoutController.h"
 #import "MLXCRestaurantNameCell.h"
-#import "MLXCCheckoutFoodList.h"
-#import "MLXCCheckoutManager.h"
+#import "MLXCRestaurantFoodCell.h"
 
 @implementation MLXCCheckoutController
 
@@ -27,6 +26,29 @@ DEFINE_SINGLETON(MLXCCheckoutController);
     }
 }
 
+- (void)reloadCheckoutViewController{
+    [_checkoutVC reloadData];
+}
+
+- (void)showSelectFood:(NSIndexPath *)indexPath{
+    if (indexPath.row == 0) {//点击第一个
+        MLXCCheckoutFoodList *foodList = [MLXCCheckoutManager shareInstance].selectRestaurants[indexPath.section];
+        foodList.bExtand = !foodList.bExtand;
+        
+        [self reloadCheckoutViewController];
+    }
+}
+
+- (void)changeFood:(ChangeFoodType)changeType food:(MLXCCheckoutFood *)selectFood{
+    [[MLXCCheckoutManager shareInstance] changeFood:changeType food:selectFood];
+    
+    if ([MLXCCheckoutManager shareInstance].selectRestaurants.count > 0) {
+        [self reloadCheckoutViewController];
+    }else{
+        [_checkoutVC showNoDataView];
+    }
+}
+
 #pragma mark - tableview datasource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return [MLXCCheckoutManager shareInstance].selectRestaurants.count;
@@ -34,14 +56,24 @@ DEFINE_SINGLETON(MLXCCheckoutController);
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     MLXCCheckoutFoodList *foodList = [MLXCCheckoutManager shareInstance].selectRestaurants[section];
-    return foodList.foods.count+1;
+    NSInteger iFoodListCount = foodList.bExtand?(foodList.foods.count+1):1;
+    return iFoodListCount;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    MLXCRestaurantNameCell *cell = (MLXCRestaurantNameCell *)[tableView dequeueReusableCellWithIdentifier:@"MLXCRestaurantNameCellIndentifier"];
     MLXCCheckoutFoodList *foods = [MLXCCheckoutManager shareInstance].selectRestaurants[indexPath.section];
-    cell.foodList = foods;
-    return cell;
+    if (indexPath.row == 0) {
+        MLXCRestaurantNameCell *cell = (MLXCRestaurantNameCell *)[tableView dequeueReusableCellWithIdentifier:@"MLXCRestaurantNameCellIndentifier"];
+        cell.foodList = foods;
+        return cell;
+    }else{
+        MLXCRestaurantFoodCell *foodCell = (MLXCRestaurantFoodCell *)[tableView dequeueReusableCellWithIdentifier:@"MLXCRestaurantFoodCellIndentifier"];
+        MLXCCheckoutFood *food = foods.foods[indexPath.row-1];
+        foodCell.food = food;
+        return foodCell;
+    }
+    
+    return nil;
 }
 
 @end

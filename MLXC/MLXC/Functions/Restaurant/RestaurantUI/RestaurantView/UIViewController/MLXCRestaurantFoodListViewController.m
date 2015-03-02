@@ -14,6 +14,7 @@
 
 @property(nonatomic, weak) IBOutlet UIView *viewNoData;
 @property(nonatomic, weak) IBOutlet UITableView *tableFood;
+@property(nonatomic, weak) IBOutlet UIView *viewPrice;
 
 @end
 
@@ -56,6 +57,7 @@
     [super showNoDataView];
     
     _tableFood.hidden = YES;
+    _viewPrice.hidden = YES;
     _viewNoData.hidden = NO;
 }
 
@@ -63,6 +65,7 @@
     [super showDataView];
     
     _tableFood.hidden = NO;
+    _viewPrice.hidden = NO;
     _viewNoData.hidden = YES;
     [_tableFood reloadData];
 }

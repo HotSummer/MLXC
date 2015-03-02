@@ -10,10 +10,10 @@
 
 @implementation MLXCCheckoutInput
 
-+ (NSDictionary *)selectFoods{
++ (NSArray *)selectFoods{
     NSUserDefaults *userDefault = [NSUserDefaults standardUserDefaults];
-    NSDictionary *dicSelectFoods = [userDefault objectForKey:SelectFoodsKey];
-    return dicSelectFoods;
+    NSArray *arrSelectFoods = [userDefault objectForKey:SelectFoodsKey];
+    return arrSelectFoods;
 }
 
 @end
